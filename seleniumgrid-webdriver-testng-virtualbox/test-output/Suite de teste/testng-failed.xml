@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite de teste]" parallel="tests">
+  <parameter name="entradaParametro" value="40"/>
+  <parameter name="nomeParametro" value="Wenderson Jose do Carmo"/>
+  <test name="Teste na primeira maquina">
+    <parameter name="entradaParametro" value="40"/>
+    <classes>
+      <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeConversorDeTemperatura"/>
+    </classes>
+  </test> <!-- Teste na primeira maquina -->
+  <test name="Teste na segunda maquina">
+    <parameter name="nomeParametro" value="Wenderson Jose do Carmo"/>
+    <classes>
+      <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeTrabalheConosco"/>
+    </classes>
+  </test> <!-- Teste na segunda maquina -->
+  <test name="Teste na Terceira maquina">
+    <parameter name="nomeParametro" value="Wenderson Jose do Carmo"/>
+    <classes>
+      <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeLoginGmail"/>
+    </classes>
+  </test> <!-- Teste na Terceira maquina -->
+  <test name="Teste na primeira maquina(failed)" parallel="tests">
+    <parameter name="entradaParametro" value="40"/>
+    <classes>
+      <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeLoginGmail">
+        <methods>
+          <include name="inicializarDriver"/>
+          <include name="fecharDriver"/>
+        </methods>
+      </class> <!-- br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeLoginGmail -->
+      <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeConversorDeTemperatura">
+        <methods>
+          <include name="fecharDriver"/>
+          <include name="testeCelsiusParaFahrenheit"/>
+          <include name="testeFahrenheitParafahrenheit"/>
+          <include name="testeCalcularConversorTemperatura" invocation-numbers="0"/>
+          <include name="testeCelsiusParaCelsius"/>
+          <include name="inicializarDriver"/>
+          <include name="testeFahrenheitParaCelsius"/>
+        </methods>
+      </class> <!-- br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeConversorDeTemperatura -->
+      <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeTrabalheConosco">
+        <methods>
+          <include name="inicializarDriver"/>
+          <include name="fecharDriver"/>
+        </methods>
+      </class> <!-- br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeTrabalheConosco -->
+    </classes>
+  </test> <!-- Teste na primeira maquina(failed) -->
+  <test name="Teste na Terceira maquina(failed)" parallel="tests">
+    <parameter name="nomeParametro" value="Wenderson Jose do Carmo"/>
+    <classes>
+      <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeLoginGmail">
+        <methods>
+          <include name="testeEnviarNomeDaContaDoGmail"/>
+          <include name="inicializarDriver"/>
+          <include name="fecharDriver"/>
+        </methods>
+      </class> <!-- br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeLoginGmail -->
+      <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeConversorDeTemperatura">
+        <methods>
+          <include name="fecharDriver"/>
+          <include name="inicializarDriver"/>
+        </methods>
+      </class> <!-- br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeConversorDeTemperatura -->
+      <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeTrabalheConosco">
+        <methods>
+          <include name="inicializarDriver"/>
+          <include name="fecharDriver"/>
+        </methods>
+      </class> <!-- br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeTrabalheConosco -->
+    </classes>
+  </test> <!-- Teste na Terceira maquina(failed) -->
+</suite> <!-- Failed suite [Suite de teste] -->
