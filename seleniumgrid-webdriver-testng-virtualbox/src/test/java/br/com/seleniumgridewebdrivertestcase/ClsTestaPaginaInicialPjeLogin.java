@@ -20,18 +20,7 @@ public class ClsTestaPaginaInicialPjeLogin
 	
 	@BeforeClass 
 	public void inicializarDriver() throws Exception 
-	{ 
-		// Atribuição da instância do Enum do Tipo Firefox 
-		//ClsEnumTipoDriver selecionadoTipoDriver = ClsEnumTipoDriver.FIREFOX; 
-		
-		// Atribuição das capacidades para usar o tipo driver Firefox 
-		//DesiredCapabilities capacidadesDesejadas = selecionadoTipoDriver.obterCapacidadesDesejadas(); 
-		
-		//linha de comando para usar uma maquina virtual do virtualbox.
-		//driver = selecionadoTipoDriver.obterObjetoWebDriverRemoto( capacidadesDesejadas, Platform.LINUX, "http://192.168.1.15:4444/wd/hub"); 
-		//CT_ValidaLoginTJE.setDriver(new FirefoxDriver());
-		//CT_ValidaLoginTJE.setDriver(selecionadoTipoDriver.obterObjetoWebDriver(capacidadesDesejadas));  
-		
+	{ 		
 		driver = new FirefoxDriver();
 	}
 	
