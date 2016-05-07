@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="68568" started-at="2016-05-03T22:53:26Z" finished-at="2016-05-03T22:54:35Z">
+  <suite name="Default suite" duration-ms="42198" started-at="2016-05-07T17:58:37Z" finished-at="2016-05-07T17:59:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="68568" started-at="2016-05-03T22:53:26Z" finished-at="2016-05-03T22:54:35Z">
+    <test name="Default test" duration-ms="42198" started-at="2016-05-07T17:58:37Z" finished-at="2016-05-07T17:59:19Z">
       <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin">
-        <test-method status="PASS" signature="inicializarDriver()[pri:0, instance:br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin@c285f4]" name="inicializarDriver" is-config="true" duration-ms="67203" started-at="2016-05-03T19:53:26Z" finished-at="2016-05-03T19:54:34Z">
+        <test-method status="PASS" signature="inicializarDriver()[pri:0, instance:br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin@c285f4]" name="inicializarDriver" is-config="true" duration-ms="40378" started-at="2016-05-07T14:58:37Z" finished-at="2016-05-07T14:59:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inicializarDriver -->
-        <test-method status="FAIL" signature="mTestaLoginaDeUsuariosPje()[pri:0, instance:br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin@c285f4]" name="mTestaLoginaDeUsuariosPje" duration-ms="1179" started-at="2016-05-03T19:54:34Z" finished-at="2016-05-03T19:54:35Z">
+        <test-method status="FAIL" signature="mTestaLoginaDeUsuariosPje()[pri:0, instance:br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin@c285f4]" name="mTestaLoginaDeUsuariosPje" duration-ms="1620" started-at="2016-05-07T14:59:17Z" finished-at="2016-05-07T14:59:19Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[this.getChromeWindowFromDocumentWindow(...) is undefined
-Command duration or timeout: 1.03 seconds
+Command duration or timeout: 1.53 seconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'NBWenderson', ip: '169.254.122.63', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c40150b2-7ea1-4233-8f01-8ce12ba2b7c4]]>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 66da43da-1e60-4b37-a657-33aa4b53f5d8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: this.getChromeWindowFromDocumentWindow(...) is undefined
-Command duration or timeout: 1.03 seconds
+Command duration or timeout: 1.53 seconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'NBWenderson', ip: '169.254.122.63', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c40150b2-7ea1-4233-8f01-8ce12ba2b7c4
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 66da43da-1e60-4b37-a657-33aa4b53f5d8
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -39,7 +39,7 @@ Session ID: c40150b2-7ea1-4233-8f01-8ce12ba2b7c4
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:945)
 	at br.com.tjmg.pje.validalogin.ClsPaginaInicialPJEValidaLogin.<init>(ClsPaginaInicialPJEValidaLogin.java:39)
-	at br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin.mTestaLoginaDeUsuariosPje(ClsTestaPaginaInicialPjeLogin.java:52)
+	at br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin.mTestaLoginaDeUsuariosPje(ClsTestaPaginaInicialPjeLogin.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -68,17 +68,17 @@ Caused by: org.openqa.selenium.WebDriverException: this.getChromeWindowFromDocum
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'NBWenderson', ip: '169.254.122.63', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.maximizeWindow(file:///C:/Users/WENDER~1/AppData/Local/Temp/anonymous4824246533147944967webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11140)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/WENDER~1/AppData/Local/Temp/anonymous4824246533147944967webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/WENDER~1/AppData/Local/Temp/anonymous4824246533147944967webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/WENDER~1/AppData/Local/Temp/anonymous4824246533147944967webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+	at <anonymous class>.FirefoxDriver.prototype.maximizeWindow(file:///C:/Users/WENDER~1/AppData/Local/Temp/anonymous3024892234360152954webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11140)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/WENDER~1/AppData/Local/Temp/anonymous3024892234360152954webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/WENDER~1/AppData/Local/Temp/anonymous3024892234360152954webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/WENDER~1/AppData/Local/Temp/anonymous3024892234360152954webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mTestaLoginaDeUsuariosPje -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin@c285f4]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-03T19:54:35Z" finished-at="2016-05-03T19:54:35Z">
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin@c285f4]" name="fecharDriver" is-config="true" duration-ms="1" started-at="2016-05-07T14:59:19Z" finished-at="2016-05-07T14:59:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharDriver -->
