@@ -10,7 +10,6 @@
     <classes>
       <class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaInicialPjeLogin">
         <methods>
-          <include name="fecharDriver"/>
           <include name="mTestaLoginaDeUsuariosPje"/>
           <include name="inicializarDriver"/>
         </methods>

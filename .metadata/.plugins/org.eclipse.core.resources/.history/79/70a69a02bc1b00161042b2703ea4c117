@@ -1,0 +1,101 @@
+package tjmg.pje.Integracao.TestNG.Usuario;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
+import org.testng.Assert;
+import br.com.tjmg.pje.DAO.ClsDaoLoginDeUsuarios;
+import br.com.tjmg.pje.interfaces.ClsUsuarioDoSistema;
+
+public class ClsTestaMinhaPaginaTestNG
+{
+	private ClsUsuarioDoSistema pessoa ;
+	private ClsDaoLoginDeUsuarios login;
+	static final int LIMITE= 5;
+	
+	@BeforeMethod
+	public void inicializa()
+	{
+		//Requisito que será validado, classe de Login
+		login = new ClsDaoLoginDeUsuarios();		
+		
+	}
+	
+	
+	/**
+	 * Este caso de teste tem o objetivo de realizar a validação da funcionalidade do login de usuarios na aplicação
+	 * Como pre-condição o usuario já deve ser uma pessoa cadastrada no sistema, ver Requisito R001-Cadastro de Pessoa no Sistema Usuário.
+	 */
+	@Test(timeOut=LIMITE)
+	public void mTestaLoginDoUsuarioNoSistemaComDadosValidos()
+	{		
+		
+		//Entrada de dados no sistema
+		pessoa = login.BuscarUmUsuario("Wenderson", "123");
+		
+		//Validação do Resultado esperado, o sistema realizou o login com os dados informados.
+		AssertJUnit.assertEquals(pessoa.getVarNomeUsuario(), "Wenderson");
+		AssertJUnit.assertEquals(pessoa.getVarSenhaUsuario(), "123");		
+		
+	}
+	
+	@Test
+	public void mTestaLoginDoUsuarioNoSistemaNaoValido()
+	{
+			
+		//Entrada de dados no sistema
+		pessoa = login.BuscarUmUsuario("Wend", "12");
+		
+		//Validação do Resultado esperado, o sistema realizou o login com os dados informados.
+		Assert.assertNotEquals(pessoa.getVarNomeUsuario(), "Wenderson");
+		Assert.assertNotEquals(pessoa.getVarSenhaUsuario(), "123");		
+		
+	}
+	
+	@Test
+	public void mTestaLoginDoUsuarioNoSistemaSemPassarOsDados()
+	{
+		
+		//Entrada de dados no sistema
+		pessoa = login.BuscarUmUsuario("", "");
+		
+		//Validação do Resultado esperado, o sistema realizou o login com os dados informados.
+		Assert.assertNotEquals(pessoa.getVarNomeUsuario(), "Wenderson");
+		Assert.assertNotEquals(pessoa.getVarSenhaUsuario(), "123");		
+		
+	}
+	
+	@Test
+	public void mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida()
+	{		
+		//Entrada de dados no sistema
+		pessoa = login.BuscarUmUsuario("Wenderson", "98");
+		
+		//Validação do Resultado esperado, o sistema realizou o login com os dados informados.
+		AssertJUnit.assertEquals(pessoa.getVarNomeUsuario(), "Wenderson");
+		Assert.assertNotEquals(pessoa.getVarSenhaUsuario(), "123");		
+		
+	}
+	
+	@Test
+	public void mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida()
+	{
+		
+		//Entrada de dados no sistema
+		pessoa = login.BuscarUmUsuario("Wend", "123");
+		
+		//Validação do Resultado esperado, o sistema realizou o login com os dados informados.
+		Assert.assertNotEquals(pessoa.getVarNomeUsuario(), "Wenderson");
+		AssertJUnit.assertEquals(pessoa.getVarSenhaUsuario(), "123");		
+		
+	}
+	
+	@Test()
+	public void mTestaExcecaoDeString()
+	{
+		String str = new String("Wenderson Jose do Carmo");
+		
+		Assert.assertNotEquals(str.substring(8)), "Wenderson Jose do Carmo");
+	}
+
+}

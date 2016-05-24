@@ -25,10 +25,10 @@ public class ClsPaginaInicialPJEValidaLogin
 	
 	protected WebDriver driver;
 	protected WebElement varMsn; 
-	protected String CPFCNPJ =  "11111111111";
-	protected String senhaParamentro = "tjmg";
-	protected String siteParamentro = "http://pjetreina.tjmg.jus.br/pje/login.seam?loginComCertificado=true";
-	protected String retornaMsn = "Os dados abaixo foram recuperados a partir da base de dados da Secretaria da Receita Federal do Brasil.";
+	protected String CPFCNPJ;
+	protected String senhaParamentro;
+	protected String siteParamentro;
+	protected String retornaMsn;
 	
 	
 	

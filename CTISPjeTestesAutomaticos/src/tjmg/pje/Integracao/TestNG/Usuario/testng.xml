@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="mTestaLoginDoUsuarioNoSistemaComDadosValidos">
+    <parameter name="nomeDoUsuario" value="Wenderson"/> 
+    <parameter name="numeroDoProcesso" value="50490547620168130025"/> 
+    <classes>
+      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG"/>
+      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

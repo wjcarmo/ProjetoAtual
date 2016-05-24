@@ -1,0 +1,24 @@
+package tjmg.pje.Integracao.RegraDeNegocio.JUnit;
+
+import br.com.tjmg.pje.DAO.ClsDaoLoginDeUsuarios;
+import br.com.tjmg.pje.interfaces.ClsPessoaDoSistema;
+
+public class ClsTestaMinhaPaginaJUnit 
+{
+	private String varNome;
+	private String varSenha;
+	private String varMsn;
+	
+	
+	@Test
+	public void mTestaLoginDoUsuarioNoSistema()
+	{
+		ClsDaoLoginDeUsuarios login = new ClsDaoLoginDeUsuarios();
+		ClsPessoaDoSistema pessoa = new ClsPessoaDoSistema(varNome, varSeha, varTipo)
+		
+	}
+	
+	
+	
+
+}

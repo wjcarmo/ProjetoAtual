@@ -1,0 +1,901 @@
+!SESSION 2016-05-16 19:51:33.289 -----------------------------------------------
+eclipse.buildId=4.3.0.I20130605-2000
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file C:\CTIS\WebDriver\.metadata\.bak_0.log
+Created Time: 2016-05-16 20:18:41.577
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 20:18:41.578
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49181 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-680733177\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49181 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-680733177\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 20:19:42.998
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49183 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-553658770\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49183 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-553658770\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 20:21:08.921
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49185 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1799044987\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49185 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1799044987\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 20:55:01.101
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49187 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--15551251\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49187 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--15551251\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:08:20.504
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49189 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1935526499\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49189 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1935526499\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:09:17.007
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49191 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--927497336\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49191 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--927497336\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:10:05.581
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49193 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-893362677\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49193 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-893362677\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:05.568
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:05.586
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:13.620
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:13.651
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:15.407
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:15.415
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:17.487
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:17.498
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:19.100
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:15:19.109
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface 2 0 2016-05-16 21:16:46.875
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.876
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15f4900,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ed824b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.876
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ded903,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1322ec9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.876
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@18fb7dc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f140d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.876
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15b18ff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f5cf78,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.876
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d4f9c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56f4f7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.876
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@134cbc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f0c3d2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.876
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d5fd1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56ff1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.877
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@a3d826,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1efca0a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.877
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@195d2b2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c96cb6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.877
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54ddec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c74e8e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.877
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1882261,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@154d7c0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.877
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1023dbf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ceb3a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-05-16 21:16:46.877
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1bfa972,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ba96d9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.829
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.836
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.869
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.874
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.883
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.900
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.906
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.909
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.928
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.931
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.936
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:30.994
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.001
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.007
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.027
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.034
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.038
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.071
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.076
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.082
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.100
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.105
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.109
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:18:31.134
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:22:19.440
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:22:19.461
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.511
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.516
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.560
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.565
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.574
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.591
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.683
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.692
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.719
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.722
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.726
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.741
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.746
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.748
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.905
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.911
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.916
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.936
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.944
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.947
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.961
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.968
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.971
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:22:45.990
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:23:26.175
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:23:26.200
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.884
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.888
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.914
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.917
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.920
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.937
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.940
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.943
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.957
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.959
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.964
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.979
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.985
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:24.988
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.003
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.058
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.068
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.082
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.086
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.090
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.107
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.111
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.117
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:24:25.133
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:25:04.571
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49199 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1559110535\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49199 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1559110535\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:26:49.509
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49201 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1683799827\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49201 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1683799827\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:32:35.790
+!MESSAGE The POM for javax.servlet:servlet-api:jar:2.5 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:32:35.810
+!MESSAGE The POM for mysql:mysql-connector-java:jar:5.1.6 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-05-16 21:32:44.476
+!MESSAGE Invalid ZIP archive: C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-05-16 21:32:44.479
+!MESSAGE Invalid ZIP archive: C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:33:03.811
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49246 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--717803728\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49246 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--717803728\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:36:03.608
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-16 21:36:03.634
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.900
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.905
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.923
+!MESSAGE Launch configuration ClsTestaPaginaDeConversorDeTemperatura references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.927
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.930
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.947
+!MESSAGE Launch configuration ClsTestaPaginaDeLoginGmail references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.950
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.954
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.984
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.988
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:09.991
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.010
+!MESSAGE Launch configuration ClsTestaPaginaDeTrabalheConosco.testeEnviarMensagemDeTrabalheConosco references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.014
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.017
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.039
+!MESSAGE Launch configuration ClsTestaPaginaInicialPjeLogin references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.171
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.186
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.211
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_src.test.resources.testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.216
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.219
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.234
+!MESSAGE Launch configuration seleniumgrid-webdriver-testng-virtualbox_testng.xml references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.237
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.242
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-05-16 21:36:10.261
+!MESSAGE Launch configuration TestNGValidaLoginPJE references closed project seleniumgrid-webdriver-testng-virtualbox
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-05-16 21:39:37.658
+!MESSAGE Invalid ZIP archive: C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-05-16 21:39:37.665
+!MESSAGE Invalid ZIP archive: C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:45:28.554
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49273 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1406066563\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49273 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1406066563\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:46:49.515
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49276 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-2027374740\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49276 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-2027374740\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:48:32.816
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49278 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1338459671\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49278 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1338459671\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:51:32.933
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49280 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1599945548\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49280 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1599945548\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 21:52:18.729
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49282 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--192938354\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49282 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--192938354\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 22:01:59.211
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49286 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1402745427\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49286 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1402745427\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 22:02:50.094
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49288 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--346766227\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49288 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--346766227\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 22:04:21.313
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49290 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-644901899\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49290 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-644901899\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 22:05:03.083
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49292 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1542967129\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49292 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-1542967129\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 22:05:40.921
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49296 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--793766183\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49296 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--793766183\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 22:07:04.745
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49300 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-776101798\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49300 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-776101798\testng-customsuite.xml
+
+!ENTRY org.eclipse.ui 4 4 2016-05-16 22:08:02.821
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2016-05-16 22:08:02.824
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2016-05-16 22:08:02.827
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2016-05-16 22:08:02.829
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2016-05-16 22:08:02.881
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2016-05-16 22:08:02.884
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.testng.eclipse 1 0 2016-05-16 22:08:25.325
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\Tecwend\tecwend\target\test-classes C:\CTIS\Tecwend\tecwend\target\classes C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49304 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1135037934\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\Tecwend\tecwend\target\test-classes:C:\CTIS\Tecwend\tecwend\target\classes:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\Users\Wenderson\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar:C:\Users\Wenderson\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar:C:\Users\Wenderson\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar org.testng.remote.RemoteTestNG -serport 49304 -protocol json -d C:\CTIS\Tecwend\tecwend\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1135037934\testng-customsuite.xml
+!SESSION 2016-05-17 19:31:27.286 -----------------------------------------------
+eclipse.buildId=4.3.0.I20130605-2000
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-17 19:43:59.804
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Wenderson'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-17 19:44:23.722
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-17 19:44:23.753
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-17 19:44:28.620
+!MESSAGE The POM for javax.servlet:servlet-api:jar:2.5 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-05-17 19:44:28.638
+!MESSAGE The POM for mysql:mysql-connector-java:jar:5.1.6 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 20:53:31.374
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49164 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1931984382\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49164 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1931984382\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 20:59:05.430
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49167 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-2006147184\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49167 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-2006147184\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 20:59:54.217
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49169 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--593338979\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49169 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--593338979\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 21:02:37.555
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49173 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1247165278\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49173 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--1247165278\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 21:03:18.368
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49175 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--821035351\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49175 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--821035351\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 21:08:05.889
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49179 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--156363275\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49179 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--156363275\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 21:09:33.205
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49183 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-999577307\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49183 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-999577307\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 21:12:49.439
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49185 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--379303098\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49185 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse--379303098\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 21:15:38.980
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49187 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-2145696664\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49187 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-2145696664\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2016-05-17 21:43:02.569
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar C:\CTIS\CTISPjeTestesAutomaticos\build\classes C:\ServidorXampp\Tomcat\lib\annotations-api.jar C:\ServidorXampp\Tomcat\lib\catalina-ant.jar C:\ServidorXampp\Tomcat\lib\catalina-ha.jar C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar C:\ServidorXampp\Tomcat\lib\catalina.jar C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar C:\ServidorXampp\Tomcat\lib\el-api.jar C:\ServidorXampp\Tomcat\lib\jasper-el.jar C:\ServidorXampp\Tomcat\lib\jasper.jar C:\ServidorXampp\Tomcat\lib\jsp-api.jar C:\ServidorXampp\Tomcat\lib\servlet-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-api.jar C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar C:\ServidorXampp\Tomcat\lib\tomcat-util.jar C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar C:\ServidorXampp\Tomcat\lib\websocket-api.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar C:\CTIS\selenium-server-standalone-2.50.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 49189 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-309370597\testng-customsuite.xml
+java -ea -classpath C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng-remote.jar:C:\CTIS\CTISPjeTestesAutomaticos\build\classes:C:\ServidorXampp\Tomcat\lib\annotations-api.jar:C:\ServidorXampp\Tomcat\lib\catalina-ant.jar:C:\ServidorXampp\Tomcat\lib\catalina-ha.jar:C:\ServidorXampp\Tomcat\lib\catalina-tribes.jar:C:\ServidorXampp\Tomcat\lib\catalina.jar:C:\ServidorXampp\Tomcat\lib\ecj-4.4.2.jar:C:\ServidorXampp\Tomcat\lib\el-api.jar:C:\ServidorXampp\Tomcat\lib\jasper-el.jar:C:\ServidorXampp\Tomcat\lib\jasper.jar:C:\ServidorXampp\Tomcat\lib\jsp-api.jar:C:\ServidorXampp\Tomcat\lib\servlet-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-api.jar:C:\ServidorXampp\Tomcat\lib\tomcat-coyote.jar:C:\ServidorXampp\Tomcat\lib\tomcat-dbcp.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-es.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-fr.jar:C:\ServidorXampp\Tomcat\lib\tomcat-i18n-ja.jar:C:\ServidorXampp\Tomcat\lib\tomcat-jdbc.jar:C:\ServidorXampp\Tomcat\lib\tomcat-util.jar:C:\ServidorXampp\Tomcat\lib\tomcat7-websocket.jar:C:\ServidorXampp\Tomcat\lib\websocket-api.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\testng.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\jcommander.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\bsh-2.0b4.jar:C:\Wenderson\Tools\eclipse\plugins\org.testng.eclipse_6.9.11.201604020423\lib\snakeyaml.jar:C:\CTIS\selenium-server-standalone-2.50.1.jar org.testng.remote.RemoteTestNG -serport 49189 -protocol json -d C:\CTIS\CTISPjeTestesAutomaticos\test-output C:\Users\WENDER~1\AppData\Local\Temp\testng-eclipse-309370597\testng-customsuite.xml

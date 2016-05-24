@@ -1,0 +1,35 @@
+package tjmg.pje.Integracao.RegraDeNegocio.JUnit;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import br.com.tjmg.pje.DAO.ClsDaoLoginDeUsuarios;
+import br.com.tjmg.pje.interfaces.ClsPessoaDoSistema;
+import br.com.tjmg.pje.interfaces.ClsUsuarioDoSistema;
+
+public class ClsTestaMinhaPaginaJUnit 
+{
+	private String varNome;
+	private String varSenha;
+	private String varMsn;
+	
+	
+	@Test
+	public void mTestaLoginDoUsuarioNoSistema()
+	{
+		ClsDaoLoginDeUsuarios login = new ClsDaoLoginDeUsuarios();
+		ClsUsuarioDoSistema pessoa ;
+		
+		pessoa = login.BuscarUmUsuario("wederson", "123");
+		
+		Assert.assertEquals(pessoa.getVarNomeUsuario(), "wederson");
+		Assert.assertEquals(pessoa.getVarSenhaUsuario(), "123");
+		
+		
+		
+	}
+	
+	
+	
+
+}

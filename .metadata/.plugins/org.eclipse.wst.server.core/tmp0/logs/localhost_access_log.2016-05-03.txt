@@ -1,0 +1,2 @@
+127.0.0.1 - - [03/May/2016:19:52:45 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [03/May/2016:19:52:47 -0300] "GET /seleniumgrid-webdriver-testng-virtualbox/WEB-INF/classes/br/com/tjmg/pje/validalogin/ClsPaginaInicialPJEValidaLogin.java HTTP/1.1" 404 949

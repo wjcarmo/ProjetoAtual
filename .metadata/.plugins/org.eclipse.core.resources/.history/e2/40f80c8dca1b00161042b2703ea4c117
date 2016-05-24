@@ -1,0 +1,107 @@
+package com.br.tecwend.tecwend;
+
+
+import java.util.List;
+
+import org.junit.Before;
+import org.testng.annotations.Test;
+
+import br.com.tjmg.pje.DAO.ClsDaoLoginDeUsuarios;
+
+import com.br.tecwend.BancoDeDados.ClsConexaoBancoDeDados;
+import com.br.tecwend.Dao.ClsDaoUsuario;
+import com.br.tecwend.base.ClsUsuarioDoSistema;
+
+
+public class ClsTestaCadastroDeUsuarios {
+	
+	
+	private ClsConexaoBancoDeDados conn;
+	private ClsUsuarioDoSistema usu;
+	private ClsDaoUsuario usuDAO;  
+	
+	@Before
+	public void inicializa()
+	{
+		
+		conn = new ClsConexaoBancoDeDados();	
+		usuDAO  = new ClsDaoUsuario();
+		
+	}
+	
+	
+
+
+	@Test
+	public  void mTestaCadastroUsuarios()
+	{
+		
+		
+		usu.setVarCodigoUsuario(1);
+		usu.setVarNomeUsuario("Brenda");
+		usu.setVarSenhaUsuario("123");
+		usu.setVarTipoUsuario("Adm");
+	
+		usuDAO.CadastroUsuario(usu);
+	}
+	
+	@Test
+	public  void mTestaAlterarUsuarios()
+	{	
+		usu.setVarCodigoUsuario(5);
+		usu.setVarNomeUsuario("Alecrim");
+		usu.setVarSenhaUsuario("123");
+		usu.setVarTipoUsuario("Adm");
+		
+		usuDAO.AlterarUsuario(usu);
+	}
+	
+	@Test
+	public  void mTestaExcluirUsuarios()
+	{
+				
+		usu.setVarCodigoUsuario(5);
+		
+		usuDAO.ExcluirUsuario(usu);
+	}
+	
+	@Test
+	public  void mTestaSalvarUsuarios()
+	{
+				
+		usu.setVarCodigoUsuario(5);
+		usu.setVarNomeUsuario("Marcos");
+		usu.setVarSenhaUsuario("12345");
+		usu.setVarTipoUsuario("Nivel 001");
+		
+		
+		usuDAO.SalvarUsuario(usu);
+		//assertEquals("Dados Salvos Com Sucesso",1,1);
+	}
+	
+	@Test
+	public void  mTestaBuscarUmUsuarios()
+	{
+		
+		ClsUsuarioDoSistema um =  usuDAO.BuscarUmUsuario(1);
+		System.out.println("O usuario Retornado é: " +  um);
+		
+		
+	}
+	
+	@Test
+	public void  mTestaBuscarTodosUsuarios()
+	{
+		List<ClsUsuarioDoSistema> listaTodos =  usuDAO.BuscarTodosUsuario();
+		
+		for(ClsUsuarioDoSistema u: listaTodos)
+		{
+			System.out.println("Todos: " +  u);
+		}
+		
+		
+	}
+
+
+}
+

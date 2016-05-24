@@ -1,0 +1,47 @@
+package br.com.tjmg.pje.interfaces;
+
+public class ClsPessoaNoSistema {
+	
+	private String varNome;
+	private String varSenha;
+	private String varTipo;
+	
+	
+	public ClsPessoaNoSistema(String varNome, String varSenha, String varTipo) {
+		super();
+		this.varNome = varNome;
+		this.varSenha = varSenha;
+		this.varTipo = varTipo;
+	}
+	
+	public ClsPessoaNoSistema()
+	
+	{}
+	
+	public ClsPessoaNoSistema(String P_Tipo)
+	
+	{}
+
+		
+	public String getVarNome() {
+		return varNome;
+	}
+	public void setVarNome(String varNome) {
+		this.varNome = varNome;
+	}
+	public String getVarSenha() {
+		return varSenha;
+	}
+	public void setVarSenha(String varSenha) {
+		this.varSenha = varSenha;
+	}
+	public String getVarTipo() {
+		return varTipo;
+	}
+	public void setVarTipo(String varTipo) {
+		this.varTipo = varTipo;
+	}
+	
+	
+
+}

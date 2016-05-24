@@ -1,0 +1,5 @@
+127.0.0.1 - - [30/Apr/2016:11:40:56 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [30/Apr/2016:11:40:58 -0300] "GET /PaginaDeTestesWeb/FormLogin.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Apr/2016:11:40:58 -0300] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [30/Apr/2016:11:40:58 -0300] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [30/Apr/2016:11:41:07 -0300] "GET /PaginaDeTestesWeb/ClsValidaLoginNoSistema?Email=wenderdson&Passwd=123455&btnEntrar=Logar HTTP/1.1" 200 40

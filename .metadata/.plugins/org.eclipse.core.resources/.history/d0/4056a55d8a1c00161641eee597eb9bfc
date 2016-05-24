@@ -1,0 +1,19 @@
+package com.br.tecwend.BancoDeDados;
+
+import java.io.File;
+
+public class ClsLerArquivoDeDados
+{
+	
+	File arquivo = new File("C:\\CTIS\\Pessoa.txt"); 
+	
+	
+	boolean existe = arquivo.exists();  
+	
+	
+	
+	
+	
+	
+
+}

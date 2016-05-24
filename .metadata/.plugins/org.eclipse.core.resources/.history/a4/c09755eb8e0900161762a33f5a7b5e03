@@ -1,0 +1,18 @@
+<suite name="Suite de teste" parallel="tests" thread-count="2"> 
+	
+	<test name="Teste na primeira maquina"> 
+		<parameter name="entradaParametro" value="40" /> 
+			<classes> 
+				<class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeConversorDeTemperatura" /> 
+			</classes> 
+		</test>
+	 
+	 <test name="Teste na segunda maquina"> 
+	 	<parameter name="nomeParametro" value="Wenderson Jose do Carmo" />
+	 		 <classes> 
+	 		 	<class name="br.com.seleniumgridewebdrivertestcase.ClsTestaPaginaDeTrabalheConosco" /> 
+	 		 </classes> 
+	 		 
+	 	</test>
+</suite>
+

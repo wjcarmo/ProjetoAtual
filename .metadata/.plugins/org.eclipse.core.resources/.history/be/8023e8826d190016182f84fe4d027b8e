@@ -1,0 +1,48 @@
+package tjmg.pje.Integracao.RegraDeNegocio.JUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import tjmg.pje.Interface.Usuario.WebDriver.MinhaPaginaDeLogin;
+
+public class TestaMinhaPaginaDeLogin
+{
+	
+	private WebDriver drive;
+	private String varNome = "Wenderson";
+	private String varSenha= "123"; 
+	
+	@BeforeClass 
+	public void inicializarDriver() throws Exception 
+	{ 
+		 drive = new  FirefoxDriver();  
+	}
+	
+	@AfterClass 
+	public void fecharDriver() 
+	{
+		if (null != drive) 
+		     { 
+			     drive.quit(); 
+			 }
+		}
+	
+	
+	@Test
+	public void mTestaMinhaPaginaDeLogin()
+	{
+		MinhaPaginaDeLogin login = new MinhaPaginaDeLogin();
+		
+		login.preencherCPFCNPJ(varNome);
+		login.preencherSenha(varSenha);
+		login.clickBotaoEntrar();
+		
+		Assert.assertEquals(varNome, "Wenderson");
+		Assert.assertEquals(varSenha, "123");
+	}
+
+}

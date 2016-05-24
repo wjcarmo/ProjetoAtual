@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+seleniumgrid-webdriver-testng-virtualbox.outdir=/test-output
+seleniumgrid-webdriver-testng-virtualbox.watchResultDirectory=C\:\\CTIS\\RelatoriosTestNG\\testng-results.xml

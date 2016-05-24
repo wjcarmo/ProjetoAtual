@@ -1,0 +1,57 @@
+package tjmg.pje.Integracao.TestNG.Usuario;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import br.com.tjmg.pje.DAO.ClsDaoLoginDeUsuarios;
+import br.com.tjmg.pje.interfaces.ClsUsuarioDoSistema;
+
+public class ClsTestaMinhaPaginaTestNG
+{
+	private String varNome;
+	private String varSenha;
+	private String varMsn;
+	
+	
+	/**
+	 * Este caso de teste tem o objetivo de realizar a validação da funcionalidade do login de usuarios na aplicação
+	 * Como pre-condição o usuario já deve ser uma pessoa cadastrada no sistema, ver Requisito R001-Cadastro de Pessoa no Sistema Usuário.
+	 */
+	@Test
+	public void mTestaLoginDoUsuarioNoSistemaValido()
+	{
+		//Requisito que será validado, classe de Login
+		ClsDaoLoginDeUsuarios login = new ClsDaoLoginDeUsuarios();
+		ClsUsuarioDoSistema pessoa ;
+		
+		//Entrada de dados no sistema
+		pessoa = login.BuscarUmUsuario("Wenderson", "123");
+		
+		//Validação do Resultado esperado, o sistema realizou o login com os dados informados.
+		Assert.assertEquals(pessoa.getVarNomeUsuario(), "Wenderson");
+		Assert.assertEquals(pessoa.getVarSenhaUsuario(), "123");		
+		
+	}
+	
+	@Test
+	public void mTestaLoginDoUsuarioNoSistemaNaoValido()
+	{
+		//Requisito que será validado, classe de Login
+		ClsDaoLoginDeUsuarios login = new ClsDaoLoginDeUsuarios();
+		ClsUsuarioDoSistema pessoa ;
+		
+		//Entrada de dados no sistema
+		pessoa = login.BuscarUmUsuario("Wenderson", "12");
+		
+		//Validação do Resultado esperado, o sistema realizou o login com os dados informados.
+		Assert.assertNotEquals(pessoa.getVarNomeUsuario(), "Wenderson");
+		Assert.assertNotEquals(pessoa.getVarSenhaUsuario(), "12");		
+		
+	}
+	@Test
+	public void test()
+	{
+		fail("Not yet implemented..");
+	}
+
+}

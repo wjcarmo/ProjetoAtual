@@ -1,0 +1,53 @@
+package br.com.tjmg.pje.DAO;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import br.com.tjmg.pje.interfaces.ClsUsuarioDoSistema;
+
+public class ClsDaoLoginDeUsuarios
+{
+	/**
+	 * O metodo BuscarUmUsuarios conecta no banco de dados e busca o usuario conforme o Nome e senha informado.
+	 * @param nome parametro do usuario no banco de dados, utilizado nos sistema
+	 * senha do usuario cadastro no sistema. 
+	 * @return O Retorno é dados do usuario informado.
+	 */
+	
+	public ClsUsuarioDoSistema BuscarUmUsuario(String nome, String senha) 
+	{
+			String sql = "Select * from  Tecwendusuarios  where id=? ";
+		
+		try
+		
+		{
+			PreparedStatement busca =  (PreparedStatement) conn.prepareStatement(sql);
+			
+			busca.setLong(1, Id);
+			
+			ResultSet umUsu = busca.executeQuery();
+			
+			if(umUsu.next())
+			{
+				ClsUsuarioDoSistema usu = new ClsUsuarioDoSistema();
+				
+				usu.setVarCodigoUsuario(umUsu.getInt("id"));
+				usu.setVarNomeUsuario(umUsu.getString("Nome"));
+				usu.setVarSenhaUsuario(umUsu.getString("Senha"));
+				usu.setVarTipoUsuario(umUsu.getString("Tipo"));
+				
+				return usu;
+			}
+				
+		} 
+		catch (SQLException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return null;
+	   	}
+
+}

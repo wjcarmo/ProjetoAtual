@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="nomeDoUsuario" value="Wenderson"/>
+  <parameter name="numeroDoProcesso" value="50490547620168130025"/>
+  <test name="mTestaLoginDoUsuarioNoSistemaComDadosValidos(failed)">
+    <parameter name="nomeDoUsuario" value="Wenderson"/>
+    <parameter name="numeroDoProcesso" value="50490547620168130025"/>
+    <classes>
+      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG">
+        <methods>
+          <include name="inicializa"/>
+        </methods>
+      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG -->
+      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema">
+        <methods>
+          <include name="inicializa"/>
+          <include name="mTestaPesquisaDeProcessoNoSistemaComDadosValidos" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema -->
+    </classes>
+  </test> <!-- mTestaLoginDoUsuarioNoSistemaComDadosValidos(failed) -->
+</suite> <!-- Failed suite [Suite] -->
