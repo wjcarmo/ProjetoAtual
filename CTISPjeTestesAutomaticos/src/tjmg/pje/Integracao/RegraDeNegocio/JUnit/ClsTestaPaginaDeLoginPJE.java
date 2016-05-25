@@ -116,7 +116,7 @@ public class ClsTestaPaginaDeLoginPJE
 		
 		//Retorno esperado depois da realização dos testes
 		// Verifica se são iguais, o resultado com o esperado 		
-		Assert.assertEquals(paginaDeLogin.getSelectUsuarioLogado(), "Aquilae Cygni"); 
+		Assert.assertNotEquals(paginaDeLogin.getSelectUsuarioLogado(), "Aquilae Cygni"); 
 		
 	   }
 	
@@ -136,7 +136,7 @@ public class ClsTestaPaginaDeLoginPJE
 				
 		//Retorno esperado depois da realização dos testes
 		// Verifica se são iguais, o resultado com o esperado 		
-		Assert.assertEquals(paginaDeLogin.getSelectUsuarioLogado(), "Velorum Andromedae"); 
+		Assert.assertNotEquals(paginaDeLogin.getSelectUsuarioLogado(), "Velorum Andromedae"); 
 		
 	   }
 		
@@ -156,7 +156,7 @@ public class ClsTestaPaginaDeLoginPJE
 			
 		//Retorno esperado depois da realização dos testes
 		// Verifica se são iguais, o resultado com o esperado 		
-		Assert.assertEquals(paginaDeLogin.getSelectUsuarioLogado(), "Pegasi Puppis"); 
+		Assert.assertNotEquals(paginaDeLogin.getSelectUsuarioLogado(), "Pegasi Puppis"); 
 		
 	   }
 	

@@ -74,14 +74,69 @@ public class ClsTestaIncluirNovoProcesso
 			
 			processo.SelectSecao();
 			Thread.sleep(3000);
+			
 			processo.SelectClasseJudicial();
 			Thread.sleep(3000);
+			
 			processo.BotaoIncluirProcesso();
 			Thread.sleep(3000);			
+			
 			processo.BotaoListaAssunto();
 			Thread.sleep(3000);	
+			
 			processo.BotaoAdicionarPartes();
 			Thread.sleep(3000);	
+						
+			processo.btnAdicionarPartesAtivo();
+			Thread.sleep(3000);	
+			
+			processo.DigitarCPFCNPJPartesAtivo();
+			Thread.sleep(3000);
+					
+			
+			processo.btnPesquisarCPFCNPJ();
+			Thread.sleep(3000);
+			
+			
+			processo.btnConfirmarCPFCNPJ();
+			Thread.sleep(3000);
+			  
+			
+			processo.btnInserirAtivo();
+			Thread.sleep(3000);	
+			
+			processo.btnInserirCPFCNPJAtivo();
+			Thread.sleep(3000);
+				
+			
+			
+			processo.btnAdicionarPartesPassivo();
+			Thread.sleep(3000);		
+			
+			processo.DigitarCPFCNPJPartesPassivo();
+			Thread.sleep(3000);	
+			
+			processo.btnPesquisarCPFCNPJ();
+			Thread.sleep(3000);	
+			
+			processo.SelectDocumento();
+			Thread.sleep(3000);	
+			
+			processo.editarNomeAlcunha();
+			Thread.sleep(3000);	
+			
+			processo.btnConfirmarDocumentoPassivo();
+			Thread.sleep(3000);
+					
+			processo.btnEnderecos();
+			Thread.sleep(3000);
+			
+			processo.btnEnderecoDesconhecido();
+			Thread.sleep(3000);
+							
+			processo.btnInserirReu();
+			Thread.sleep(3000);
+						
 			processo.BotaoAdicionarPeticoes();
 			Thread.sleep(3000);	
 			processo.editarPeticoes();
@@ -91,14 +146,11 @@ public class ClsTestaIncluirNovoProcesso
 			processo.BotaoAssinarPeticoes();
 			Thread.sleep(3000);	
 			processo.BotaoAssinarOk();
-			
-			
-			
-			
-		
-			
-		   
-							
+			Thread.sleep(3000);	
+			processo.BotaoProcesso();	
+			Thread.sleep(3000);	
+			processo.BotaoProtocolar();		
+										
 
 	  }  
 }

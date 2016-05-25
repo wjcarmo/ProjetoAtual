@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\P5523732\AppData\Local\Temp\testng-eclipse-421491904\testng-customsuite.xml</span>
+                    <span>C:\Users\P5523732\AppData\Local\Temp\testng-eclipse-406329127\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,55 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">6 methods,  1 skipped,  5 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content skipped suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso" hash-for-method="mTestaIncluirUmNovoProcesso">mTestaIncluirUmNovoProcesso</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG" hash-for-method="mTestaLoginDoUsuarioNoSistemaComDadosValidos">mTestaLoginDoUsuarioNoSistemaComDadosValidos</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG" hash-for-method="mTestaExcecaoDeString">mTestaExcecaoDeString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG" hash-for-method="mTestaLoginDoUsuarioNoSistemaNaoValido">mTestaLoginDoUsuarioNoSistemaNaoValido</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG" hash-for-method="mTestaLoginDoUsuarioNoSistemaSemPassarOsDados">mTestaLoginDoUsuarioNoSistemaSemPassarOsDados</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG" hash-for-method="mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida">mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG" hash-for-method="mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida">mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,49 +151,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso</span>
+              <img src="skipped.png"/>
+              <span class="class-name">tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="mTestaIncluirUmNovoProcesso">
-                  </a> <!-- mTestaIncluirUmNovoProcesso -->
-                  <span class="method-name">mTestaIncluirUmNovoProcesso</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Assinando em modo teste.): Assinando em modo teste.
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=23.0.1, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 45cf0187-c2e7-468e-82d8-912abb10bb98
-*** Element info: {Using=id, value=Assinador}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.submit(Unknown Source)
-	at tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaInclusaoDeUmProcesso.BotaoAssinarOk(ClsPaginaInclusaoDeUmProcesso.java:126)
-	at tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso.mTestaIncluirUmNovoProcesso(ClsTestaIncluirNovoProcesso.java:93)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+                  <a name="mTestaLoginDoUsuarioNoSistemaComDadosValidos">
+                  </a> <!-- mTestaLoginDoUsuarioNoSistemaComDadosValidos -->
+                  <span class="method-name">mTestaLoginDoUsuarioNoSistemaComDadosValidos</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;nomeDoUsuario&apos; is required by @Test on method mTestaLoginDoUsuarioNoSistemaComDadosValidos but has not been marked @Optional or defined
+in C:\Users\P5523732\AppData\Local\Temp\testng-eclipse-406329127\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:778)
@@ -182,11 +193,54 @@ Session ID: 45cf0187-c2e7-468e-82d8-912abb10bb98
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-skipped -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mTestaExcecaoDeString">
+                  </a> <!-- mTestaExcecaoDeString -->
+                  <span class="method-name">mTestaExcecaoDeString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mTestaLoginDoUsuarioNoSistemaNaoValido">
+                  </a> <!-- mTestaLoginDoUsuarioNoSistemaNaoValido -->
+                  <span class="method-name">mTestaLoginDoUsuarioNoSistemaNaoValido</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mTestaLoginDoUsuarioNoSistemaSemPassarOsDados">
+                  </a> <!-- mTestaLoginDoUsuarioNoSistemaSemPassarOsDados -->
+                  <span class="method-name">mTestaLoginDoUsuarioNoSistemaSemPassarOsDados</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida">
+                  </a> <!-- mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida -->
+                  <span class="method-name">mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida">
+                  </a> <!-- mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida -->
+                  <span class="method-name">mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\P5523732\AppData\Local\Temp\testng-eclipse-421491904\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\P5523732\AppData\Local\Temp\testng-eclipse-406329127\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -195,7 +249,7 @@ Session ID: 45cf0187-c2e7-468e-82d8-912abb10bb98
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso&quot;/&gt;
+      &lt;class name=&quot;tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -235,16 +289,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'mTestaIncluirUmNovoProcesso')
-data.setCell(0, 2, 'tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso')
-data.setCell(0, 3, 44227);
+data.setCell(0, 1, 'mTestaExcecaoDeString')
+data.setCell(0, 2, 'tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG')
+data.setCell(0, 3, 14);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'mTestaLoginDoUsuarioNoSistemaNaoValido')
+data.setCell(1, 2, 'tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG')
+data.setCell(1, 3, 11);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida')
+data.setCell(2, 2, 'tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'mTestaLoginDoUsuarioNoSistemaSemPassarOsDados')
+data.setCell(3, 2, 'tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida')
+data.setCell(4, 2, 'tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'mTestaLoginDoUsuarioNoSistemaComDadosValidos')
+data.setCell(5, 2, 'tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG')
+data.setCell(5, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <span class="suite-total-time">Total running time: 29 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -270,16 +344,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">inicializa</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">mTestaIncluirUmNovoProcesso</span>
-                <span class="method-start">3955 ms</span>
+                <span class="method-name">mTestaExcecaoDeString</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">inicializa</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mTestaLoginDoUsuarioNoSistemaNaoValido</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">inicializa</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mTestaLoginDoUsuarioNoSistemaSemPassarOsDados</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">inicializa</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">inicializa</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida</span>
+                <span class="method-start">78 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
