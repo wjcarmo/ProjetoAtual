@@ -82,6 +82,7 @@ public class TestaMinhaPaginaDeLogin
 		//Validação dos dados de saida obtidos, conforme a especificação do Requisito Login.
 		Assert.assertNotEquals(varNome, "Wenderson2");
 		Assert.assertNotEquals(varSenha, "1234");
+		
 	}
 
 
