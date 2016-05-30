@@ -3,12 +3,20 @@ package tjmg.pje.Integracao.RegraDeNegocio.JUnit;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+
 import br.com.tjmg.pje.DAO.ClsDaoLoginDeUsuarios;
 import br.com.tjmg.pje.interfaces.ClsUsuarioDoSistema;
 
+
+
 public class ClsTestaMinhaPaginaJUnit 
 {
+	
+	 @Rule
+	 public ClsPrintScreenShotsComJUnit screenshotRule = new ClsPrintScreenShotsComJUnit();
+	
 	private ClsUsuarioDoSistema pessoa ;
 	private ClsDaoLoginDeUsuarios login;
 	static final int LIMITE= 5;

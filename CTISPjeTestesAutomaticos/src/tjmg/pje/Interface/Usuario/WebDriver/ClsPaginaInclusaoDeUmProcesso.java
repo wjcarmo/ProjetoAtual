@@ -15,21 +15,23 @@ public class ClsPaginaInclusaoDeUmProcesso
 {
 	@FindBy(how = How.LINK_TEXT, using = "Processo") private WebElement mProcesso;
 	@FindBy(how = How.LINK_TEXT, using = "Novo processo") private WebElement mNovoProcesso;
+	
 	@FindBy(how = How.ID, using = "processoTrfForm:classeJudicial:classeJudicialjurisdicaoComboDecoration:classeJudicialjurisdicaoCombo") private WebElement selectSecao;
 	@FindBy(how = How.ID, using = "processoTrfForm:classeJudicial:classeJudicialComboClasseJudicialDecoration:classeJudicialComboClasseJudicial") private WebElement selectClasseJudical;
 	@FindBy(how = How.ID, using = "processoTrfForm:save") private WebElement btnIncluir;
-	@FindBy(how = How.NAME, using = "r_processoAssuntoListList:2:j_id424:j_id425:j_id426") private WebElement listaDeAssuntos;
+	
+	//Elementos do Grid de Assuntos
+	@FindBy(how = How.XPATH, using = ".//*[@id='r_processoAssuntoListList:2:j_id424:j_id425:j_id426']/img") private WebElement listaDeAssuntos;
 	@FindBy(how = How.ID, using = "tabPartes_lbl") private WebElement btnAdicionarPartes;
 	
-
+	
+	//Elementos do Grid de adicionar partes do Ativo e do Passivo
 	@FindBy(how = How.ID_OR_NAME, using = "formVincularPoloAtivo:oplAddParteA") private WebElement btnAdicionarPartesAtivo;
 	@FindBy(how = How.ID_OR_NAME, using = "formVincularPoloPassivo:addParteP") private WebElement btnAdicionarPartesPassivo;
-	
+		
 	
 	@FindBy(how = How.XPATH, using = ".//*[@id='preCadastroPessoaFisicaForm:preCadastroPessoaFisica_nrCPFDecoration:preCadastroPessoaFisica_nrCPF']") private WebElement DigitarCPFCNPJPartesAtivo;
-	
 	@FindBy(how = How.ID, using = "preCadastroPessoaFisicaForm:pesquisarDocumentoPrincipal") private WebElement btnConfirmarCPFCNPJ;
-	
 	
 	@FindBy(how = How.ID_OR_NAME, using = "preCadastroPessoaFisicaForm:isPessoaNaoIndividualizadaDecoration:isPessoaNaoIndividualizada") private WebElement DigitarCPFCNPJPartesPassivo;
 	
@@ -46,10 +48,7 @@ public class ClsPaginaInclusaoDeUmProcesso
 	
 		
 	@FindBy(how = How.ID, using = "formInserirParteProcesso:enderecoUsuario_lbl") private WebElement btnEnderecos;
-	
 	@FindBy(how = How.ID, using = "formInserirParteProcesso:cadastroPartePessoaEnderecochbkxIsEnderecoDesconhecido") private WebElement btnEnderecoDesconhecido;
-	
-	
 	@FindBy(how = How.ID, using = "formInserirParteProcesso:btnInserirParteProcesso") private WebElement btnInserirReu;	
 	
 	
@@ -62,8 +61,13 @@ public class ClsPaginaInclusaoDeUmProcesso
 	@FindBy(how = How.ID, using = "formBotoesAcao:btnProtocolar") private WebElement btnProtocolar;	
 	
 	
+	//Elementos da tela de Verificação do Ambiente
+	@FindBy(how = How.XPATH, using = ".//*[@id='panelAmbienteContentDiv']/div/img") private WebElement btnXFecharAmbiente;	
+	@FindBy(how = How.XPATH, using = ".//*[@id='btnfechar']") private WebElement btnFecharAmbiente;		
+	@FindBy(how = How.XPATH, using = ".//*[@id='panelAmbienteHeader']") private WebElement painelDoAmbiente;	
 	
 	
+		
 	
 	private WebDriver driver; 
 	protected String digitaCPFCNPJAdvogado ="62163250350"; ; 
@@ -72,7 +76,7 @@ public class ClsPaginaInclusaoDeUmProcesso
 	protected String retornaMensagem = "";
 	protected String classeJudical = "DESPEJO (92)";
 	protected String sessao = "Belo Horizonte";
-	protected String digitaCPFCNPJParteAtivo = "22222222222";
+	protected String digitaCPFCNPJParteAtivo = "33333333333";
 	
 	protected String digitaCPFCNPJPartePassivo = "11111111111";
 	protected String documento = "Não";
@@ -89,7 +93,6 @@ public class ClsPaginaInclusaoDeUmProcesso
 	
 	public void clicarNovoProcesso( ) 
 	{
-		//PageFactory.initElements(this.driver, this); 
 		 mNovoProcesso.click();
 	}
 	
@@ -100,7 +103,6 @@ public class ClsPaginaInclusaoDeUmProcesso
 	public void setListaDeAssuntos(WebElement listaDeAssuntos) {
 		this.listaDeAssuntos = listaDeAssuntos;
 	}
-	
 
 	public WebDriver getDriver() {
 		return driver;
@@ -129,8 +131,7 @@ public class ClsPaginaInclusaoDeUmProcesso
 		btnAdicionarPartes.click();
 		
 	}
-	
-	
+		
 	public void btnAdicionarPartesAtivo() 
 	{
 		
@@ -144,22 +145,19 @@ public class ClsPaginaInclusaoDeUmProcesso
 		btnAdicionarPartesPassivo.click();
 		
 	}
-	
-	
+		
 	public void DigitarCPFCNPJPartesAtivo() 
 	{
 		
-		DigitarCPFCNPJPartesAtivo.sendKeys("xpath=.//*[@id='preCadastroPessoaFisicaForm:preCadastroPessoaFisica_nrCPFDecoration:preCadastroPessoaFisica_nrCPF']=33333333333");		
+		DigitarCPFCNPJPartesAtivo.sendKeys("33333333333");
 	}
-	
 	
 	public void DigitarCPFCNPJPartesPassivo() 
 	{
 		
 		DigitarCPFCNPJPartesPassivo.click();		
 	}
-	
-	
+
 	public void btnConfirmarCPFCNPJ() 
 	{
 		
@@ -171,8 +169,7 @@ public class ClsPaginaInclusaoDeUmProcesso
 		
 		btnInserirCPFCNPJAtivo.click();		
 	}
-	
-	
+
 	public void btnEnderecoDesconhecido() 
 	{
 		
@@ -185,14 +182,12 @@ public class ClsPaginaInclusaoDeUmProcesso
 		btnEnderecos.click();
 		
 	}
-	
-	
+
 	public void editarNomeAlcunha() 
 	{
 		
 		editarNomeAlcunha.sendKeys("NomeAlcunha");	
 	}
-	
 
 	public void btnConfirmarDocumentoPassivo() 
 	{
@@ -220,17 +215,12 @@ public class ClsPaginaInclusaoDeUmProcesso
 		btnInserirAtivo.click();
 		
 	}
-	
-	
-	
-	
-	
+		
 	public void SelectDocumento() 
 	{
 		Select seldocumento = new Select(selectDocumento); 
 		seldocumento.selectByVisibleText(documento); 
 	}
-	
 	
 	public void BotaoListaAssunto() 
 	{
@@ -269,6 +259,12 @@ public class ClsPaginaInclusaoDeUmProcesso
 		 alt.accept();
 		
 	}
+	public void BotaoErroOk() 
+	{	
+	     alt = driver.switchTo().alert();
+		 alt.accept();
+		
+	}
 	
 	public void BotaoProcesso() 
 	{
@@ -279,8 +275,7 @@ public class ClsPaginaInclusaoDeUmProcesso
 	{
 		btnProtocolar.click();
 	}
-	
-	
+		
 	public ClsPaginaInclusaoDeUmProcesso(WebDriver driver)
 	{
 		super();

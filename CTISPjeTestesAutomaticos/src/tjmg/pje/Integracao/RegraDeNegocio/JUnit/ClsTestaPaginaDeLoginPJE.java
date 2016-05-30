@@ -1,21 +1,30 @@
 package tjmg.pje.Integracao.RegraDeNegocio.JUnit;
 
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
+import org.testng.TestListenerAdapter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 
 import tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaValidaLoginPJE;
 
-
-public class ClsTestaPaginaDeLoginPJE 
+@Listeners(ClsTestaPaginaDeLoginPJE.class)
+public class ClsTestaPaginaDeLoginPJE extends TestListenerAdapter
 {
 	
 	
@@ -99,27 +108,7 @@ public class ClsTestaPaginaDeLoginPJE
 		
 	   }
 	
-	/**
-	 * Caso de testes que irá testar o login do usuário com o perfil de Advogado no sistema PJe
-	 * @throws InterruptedException O sistema lança uma exceção caso o site esteja fora do ar.
-	 */
-	@Test 	
-	public void mTestaLoginNoSistemaPJEPerfilAdvogado() throws InterruptedException 
-	{  
 		
-		//Entrada de dados para teste
-		paginaDeLogin.setSiteParamentro(recebeSite);
-		paginaDeLogin.preencherCPFCNPJ(recebeCPFCNPJAdvogado);
-		paginaDeLogin.preencherSenha(recebeSenha);
-		paginaDeLogin.clickBotaoEntrar();
-	
-		
-		//Retorno esperado depois da realização dos testes
-		// Verifica se são iguais, o resultado com o esperado 		
-		Assert.assertNotEquals(paginaDeLogin.getSelectUsuarioLogado(), "Aquilae Cygni"); 
-		
-	   }
-	
 	/**
 	 * Caso de testes que irá testar o login do usuário com o perfil de Público no sistema PJe
 	 * @throws InterruptedException O sistema lança uma exceção caso o site esteja fora do ar.
@@ -159,6 +148,35 @@ public class ClsTestaPaginaDeLoginPJE
 		Assert.assertNotEquals(paginaDeLogin.getSelectUsuarioLogado(), "Pegasi Puppis"); 
 		
 	   }
+	
+	/**
+	 * Caso de testes que irá testar o login do usuário com o perfil de Advogado no sistema PJe
+	 * @throws InterruptedException O sistema lança uma exceção caso o site esteja fora do ar.
+	 */
+	@Test 	
+	public void mTestaLoginNoSistemaPJEPerfilAdvogado() throws InterruptedException 
+	{  
+		
+		//Entrada de dados para teste
+		paginaDeLogin.setSiteParamentro(recebeSite);
+		paginaDeLogin.preencherCPFCNPJ(recebeCPFCNPJAdvogadoAbdala);
+		paginaDeLogin.preencherSenha(recebeSenha);
+		paginaDeLogin.clickBotaoEntrar();
+	
+		
+		//Retorno esperado depois da realização dos testes
+		// Verifica se são iguais, o resultado com o esperado 
+		Assert.assertEquals(paginaDeLogin.getSelectUsuarioLogado(), "Aquilae Cygni"); 
+		
+	   }
+	
+	public void onTestSuccess(ITestResult result)
+	{
+
+		System.out.println("Log de Testes "+result.toString());
+	}
+	
+	
 	
 	
 	

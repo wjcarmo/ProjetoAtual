@@ -1,5 +1,13 @@
 package tjmg.pje.Integracao.TestNG.Usuario;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -19,6 +27,8 @@ public class ClsTestaMinhaPaginaTestNG
 	
 	
 	static final int LIMITE= 200;
+	private WebDriver driver;
+	
 	
 	@BeforeMethod
 	public void inicializa()
@@ -29,6 +39,7 @@ public class ClsTestaMinhaPaginaTestNG
 		ler.lerPessoa();
 		
 	}
+	
 	
 	
 	/**
@@ -108,5 +119,6 @@ public class ClsTestaMinhaPaginaTestNG
 		
 		Assert.assertNotEquals(str.substring(7), "Wenderson Jose do Carmo");
 	}
-
+	
+	
 }

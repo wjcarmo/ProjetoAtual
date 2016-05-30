@@ -1,7 +1,13 @@
 package tjmg.pje.Integracao.TestNG.Usuario;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.junit.Before;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,11 +15,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import br.com.tjmg.pje.Evidencias.ClsPrintScreenShotEvidenciaPositivasENegativas;
 import tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaInclusaoDeUmProcesso;
 import tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaValidaLoginPJE;
 
+@Listeners(ClsPrintScreenShotEvidenciaPositivasENegativas.class)
 public class ClsTestaIncluirNovoProcesso
 {
 
@@ -32,6 +41,8 @@ public class ClsTestaIncluirNovoProcesso
 	protected String recebeCPFCNPJMagistradoDelvan = "38030861672"; 
 	protected String recebeCPFCNPJAssessorWellington = "98728016653"; 	
 	protected String recebeSenha="tjmg"; 
+	
+	
 		
 	
 	@BeforeMethod
@@ -42,16 +53,28 @@ public class ClsTestaIncluirNovoProcesso
 		paginaDeLogin  = new ClsPaginaValidaLoginPJE(driver); 
 		
 	}
-	/*
+	
 	@AfterMethod
-	public void fecharDriver() 
+	public void fecharDriver() throws IOException 
 	{
 		if (null != driver) 
 		     { 
-			     driver.quit(); 
+				mPrintScreenEvidenciaNegativasEPossitivas();
+				driver.quit(); 
+			     
 			 }
 		}
-		*/
+	
+	public void mPrintScreenEvidenciaNegativasEPossitivas() throws IOException
+	{
+	    
+			// Criação do objeto do tipo FILE e tirando uma screenshot
+			File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			// Salvando a screenshot. 
+			FileUtils.copyFile(scrFile, new File("/CTISPjeTestesAutomaticos/Arquivo/ClsTestaIncluirNovoProcesso.png"));
+					
+	}
+	
 
 	 @Test
 	  public void mTestaIncluirUmNovoProcesso() throws InterruptedException 
@@ -66,11 +89,11 @@ public class ClsTestaIncluirNovoProcesso
 				
 			processo.clicarProcesso();
 			
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 							
 			processo.clicarNovoProcesso();
 			
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			
 			processo.SelectSecao();
 			Thread.sleep(3000);
@@ -107,8 +130,6 @@ public class ClsTestaIncluirNovoProcesso
 			
 			processo.btnInserirCPFCNPJAtivo();
 			Thread.sleep(3000);
-				
-			
 			
 			processo.btnAdicionarPartesPassivo();
 			Thread.sleep(3000);		
@@ -139,17 +160,27 @@ public class ClsTestaIncluirNovoProcesso
 						
 			processo.BotaoAdicionarPeticoes();
 			Thread.sleep(3000);	
+			
 			processo.editarPeticoes();
 			Thread.sleep(3000);	
+			
 			processo.BotaoSalvarPeticoes();			
 			Thread.sleep(3000);	
+			
 			processo.BotaoAssinarPeticoes();
 			Thread.sleep(3000);	
+			
 			processo.BotaoAssinarOk();
 			Thread.sleep(3000);	
+			
+			//processo.BotaoErroOk();
+			//Thread.sleep(3000);	
+			
 			processo.BotaoProcesso();	
 			Thread.sleep(3000);	
-			processo.BotaoProtocolar();		
+			
+			processo.BotaoProtocolar();	
+			Thread.sleep(5000);	
 										
 
 	  }  

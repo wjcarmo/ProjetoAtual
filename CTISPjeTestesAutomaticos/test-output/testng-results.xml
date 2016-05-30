@@ -1,93 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="6" passed="5">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="99" started-at="2016-05-25T12:03:28Z" finished-at="2016-05-25T12:03:28Z">
+  <suite name="Suite" duration-ms="95" started-at="2016-05-30T18:54:44Z" finished-at="2016-05-30T18:54:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="99" started-at="2016-05-25T12:03:28Z" finished-at="2016-05-25T12:03:28Z">
+    <test name="mTestaLoginDoUsuarioNoSistemaComDadosValidos" duration-ms="95" started-at="2016-05-30T18:54:44Z" finished-at="2016-05-30T18:54:44Z">
       <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG">
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="inicializa" is-config="true" duration-ms="36" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="7" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaExcecaoDeString()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="mTestaExcecaoDeString" duration-ms="14" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        <test-method status="PASS" signature="mTestaExcecaoDeString()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaExcecaoDeString" duration-ms="8" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mTestaExcecaoDeString -->
-        <test-method status="SKIP" signature="mTestaLoginDoUsuarioNoSistemaComDadosValidos(java.lang.String)[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="mTestaLoginDoUsuarioNoSistemaComDadosValidos" duration-ms="0" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'nomeDoUsuario' is required by @Test on method mTestaLoginDoUsuarioNoSistemaComDadosValidos but has not been marked @Optional or defined
-in C:\Users\P5523732\AppData\Local\Temp\testng-eclipse-406329127\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'nomeDoUsuario' is required by @Test on method mTestaLoginDoUsuarioNoSistemaComDadosValidos but has not been marked @Optional or defined
-in C:\Users\P5523732\AppData\Local\Temp\testng-eclipse-406329127\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharDriver -->
+        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicializa -->
+        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaComDadosValidos(java.lang.String)[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaComDadosValidos" duration-ms="11" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wenderson]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mTestaLoginDoUsuarioNoSistemaComDadosValidos -->
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="inicializa" is-config="true" duration-ms="0" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaNaoValido()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="mTestaLoginDoUsuarioNoSistemaNaoValido" duration-ms="11" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        </test-method> <!-- fecharDriver -->
+        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaNaoValido()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaNaoValido" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mTestaLoginDoUsuarioNoSistemaNaoValido -->
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="inicializa" is-config="true" duration-ms="1" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaSemPassarOsDados()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="mTestaLoginDoUsuarioNoSistemaSemPassarOsDados" duration-ms="1" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharDriver -->
+        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaSemPassarOsDados()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaSemPassarOsDados" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mTestaLoginDoUsuarioNoSistemaSemPassarOsDados -->
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="inicializa" is-config="true" duration-ms="1" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida" duration-ms="2" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharDriver -->
+        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicializa -->
+        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida -->
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="inicializa" is-config="true" duration-ms="1" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharDriver -->
+        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@be2bc2]" name="mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida" duration-ms="1" started-at="2016-05-25T09:03:28Z" finished-at="2016-05-25T09:03:28Z">
+        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida" duration-ms="2" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida -->
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fecharDriver -->
       </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema">
+        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema@193948d]" name="inicializa" is-config="true" duration-ms="18" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicializa -->
+        <test-method status="PASS" signature="mTestaPesquisaDeProcessoNoSistemaComDadosValidos(java.lang.String)[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema@193948d]" name="mTestaPesquisaDeProcessoNoSistemaComDadosValidos" duration-ms="7" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50490547620168130025]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mTestaPesquisaDeProcessoNoSistemaComDadosValidos -->
+      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema -->
+    </test> <!-- mTestaLoginDoUsuarioNoSistemaComDadosValidos -->
+  </suite> <!-- Suite -->
 </testng-results>
