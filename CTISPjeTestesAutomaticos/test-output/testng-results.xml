@@ -1,109 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="95" started-at="2016-05-30T18:54:44Z" finished-at="2016-05-30T18:54:44Z">
+  <suite name="Default suite" duration-ms="13149" started-at="2016-06-09T17:41:48Z" finished-at="2016-06-09T17:42:01Z">
     <groups>
     </groups>
-    <test name="mTestaLoginDoUsuarioNoSistemaComDadosValidos" duration-ms="95" started-at="2016-05-30T18:54:44Z" finished-at="2016-05-30T18:54:44Z">
-      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG">
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="7" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+    <test name="Default test" duration-ms="13149" started-at="2016-06-09T17:41:48Z" finished-at="2016-06-09T17:42:01Z">
+      <class name="tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin">
+        <test-method status="PASS" signature="inicializarDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin@132ec19]" name="inicializarDriver" is-config="true" duration-ms="4222" started-at="2016-06-09T14:41:48Z" finished-at="2016-06-09T14:41:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaExcecaoDeString()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaExcecaoDeString" duration-ms="8" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+        </test-method> <!-- inicializarDriver -->
+        <test-method status="FAIL" signature="mTestaMinhaPaginaDeLogin()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin@132ec19]" name="mTestaMinhaPaginaDeLogin" duration-ms="8358" started-at="2016-06-09T14:41:52Z" finished-at="2016-06-09T14:42:00Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"name","selector":"Email"}
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'GEJUD-536163', ip: '169.254.28.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3dd56a2-ce8e-455e-ab27-87353df61e3b
+*** Element info: {Using=name, value=Email}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"name","selector":"Email"}
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'GEJUD-536163', ip: '169.254.28.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b3dd56a2-ce8e-455e-ab27-87353df61e3b
+*** Element info: {Using=name, value=Email}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at tjmg.pje.Interface.Usuario.WebDriver.MinhaPaginaDeLogin.preencherCPFCNPJ(MinhaPaginaDeLogin.java:39)
+	at tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin.mTestaMinhaPaginaDeLogin(TestaMinhaPaginaDeLogin.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"name","selector":"Email"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'GEJUD-536163', ip: '169.254.28.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mTestaExcecaoDeString -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
+        </test-method> <!-- mTestaMinhaPaginaDeLogin -->
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin@132ec19]" name="fecharDriver" is-config="true" duration-ms="539" started-at="2016-06-09T14:42:00Z" finished-at="2016-06-09T14:42:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharDriver -->
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaComDadosValidos(java.lang.String)[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaComDadosValidos" duration-ms="11" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Wenderson]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mTestaLoginDoUsuarioNoSistemaComDadosValidos -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fecharDriver -->
-        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaNaoValido()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaNaoValido" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mTestaLoginDoUsuarioNoSistemaNaoValido -->
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fecharDriver -->
-        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaSemPassarOsDados()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaSemPassarOsDados" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mTestaLoginDoUsuarioNoSistemaSemPassarOsDados -->
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fecharDriver -->
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fecharDriver -->
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="inicializa" is-config="true" duration-ms="1" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida" duration-ms="2" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@2f8f11]" name="fecharDriver" is-config="true" duration-ms="0" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fecharDriver -->
-      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG -->
-      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema">
-        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema@193948d]" name="inicializa" is-config="true" duration-ms="18" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inicializa -->
-        <test-method status="PASS" signature="mTestaPesquisaDeProcessoNoSistemaComDadosValidos(java.lang.String)[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema@193948d]" name="mTestaPesquisaDeProcessoNoSistemaComDadosValidos" duration-ms="7" started-at="2016-05-30T15:54:44Z" finished-at="2016-05-30T15:54:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[50490547620168130025]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mTestaPesquisaDeProcessoNoSistemaComDadosValidos -->
-      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema -->
-    </test> <!-- mTestaLoginDoUsuarioNoSistemaComDadosValidos -->
-  </suite> <!-- Suite -->
+      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

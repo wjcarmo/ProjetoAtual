@@ -1,34 +1,18 @@
 package tjmg.pje.Integracao.RegraDeNegocio.JUnit;
 
-
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
-import org.testng.TestListenerAdapter;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
-
 import tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaValidaLoginPJE;
 
-@Listeners(ClsTestaPaginaDeLoginPJE.class)
-public class ClsTestaPaginaDeLoginPJE extends TestListenerAdapter
+
+public class ClsTestaPaginaDeLoginPJE 
 {
-	
-	
-	private WebDriver driver;
+	protected static WebDriver driver;
 	protected String recebeCPFCNPJMagistrado = "54335562047"; 
 	protected String recebeCPFCNPJSecretaria = "25555553072"; 
 	protected String recebeCPFCNPJAdvogado   = "62163250350"; 
@@ -166,7 +150,7 @@ public class ClsTestaPaginaDeLoginPJE extends TestListenerAdapter
 		
 		//Retorno esperado depois da realização dos testes
 		// Verifica se são iguais, o resultado com o esperado 
-		Assert.assertEquals(paginaDeLogin.getSelectUsuarioLogado(), "Aquilae Cygni"); 
+		Assert.assertEquals(paginaDeLogin.getSelectUsuarioLogado(), "ABDALA LOBO ANTUNES"); 
 		
 	   }
 	

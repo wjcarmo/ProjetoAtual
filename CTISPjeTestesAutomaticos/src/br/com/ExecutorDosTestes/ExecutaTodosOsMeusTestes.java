@@ -1,6 +1,5 @@
 package br.com.ExecutorDosTestes;
 
-import org.eclipse.jetty.server.Authentication.Failed;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;

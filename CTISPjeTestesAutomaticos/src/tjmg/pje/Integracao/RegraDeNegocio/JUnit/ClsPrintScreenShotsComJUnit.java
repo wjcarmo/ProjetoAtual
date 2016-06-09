@@ -14,6 +14,7 @@ public class ClsPrintScreenShotsComJUnit extends TestWatcher
 {
 
 	private WebDriver driver;
+	String resultado;
 	
 	
    @Override
@@ -54,6 +55,7 @@ public class ClsPrintScreenShotsComJUnit extends TestWatcher
       catch(Exception e) 
       {
       }
+	
    }
    
 }

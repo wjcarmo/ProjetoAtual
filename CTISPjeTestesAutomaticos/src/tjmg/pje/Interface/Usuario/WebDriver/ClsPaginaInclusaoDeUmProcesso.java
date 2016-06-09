@@ -1,8 +1,7 @@
 package tjmg.pje.Interface.Usuario.WebDriver;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -76,9 +75,11 @@ public class ClsPaginaInclusaoDeUmProcesso
 	protected String retornaMensagem = "";
 	protected String classeJudical = "DESPEJO (92)";
 	protected String sessao = "Belo Horizonte";
+	//protected String digitaCPFCNPJParteAtivo = "30323519873";
 	protected String digitaCPFCNPJParteAtivo = "33333333333";
 	
-	protected String digitaCPFCNPJPartePassivo = "11111111111";
+	protected String digitaCPFCNPJPartePassivo = "22222222222";
+	//protected String digitaCPFCNPJPartePassivo = "09772895676";
 	protected String documento = "Não";
 	protected String peticao = "Inclusão da petição inicial automática";
 	protected Alert alt;
@@ -149,6 +150,7 @@ public class ClsPaginaInclusaoDeUmProcesso
 	public void DigitarCPFCNPJPartesAtivo() 
 	{
 		
+		//DigitarCPFCNPJPartesAtivo.sendKeys("30323519873");
 		DigitarCPFCNPJPartesAtivo.sendKeys("33333333333");
 	}
 	
@@ -259,6 +261,17 @@ public class ClsPaginaInclusaoDeUmProcesso
 		 alt.accept();
 		
 	}
+	
+	public Alert apply(WebDriver driver)
+	{
+	  try {
+	    return driver.switchTo().alert();
+	  }
+	  catch (NoAlertPresentException e) {
+	    return null;
+	  }
+	}
+	
 	public void BotaoErroOk() 
 	{	
 	     alt = driver.switchTo().alert();

@@ -53,7 +53,7 @@ public enum ClsEnumTipoDriver implements ClsInterfaceEstabeleceDriver
  { 
 	  public DesiredCapabilities obterCapacidadesDesejadas() 
 	  { 
-		    System.setProperty("Webdriver.chrome.driver", "/seleniumgrid-webdriver-testng-virtualbox/src/test/resources/seleniumgridewebdriver/chromedriver.exe");
+		    System.setProperty("webdriver.chrome.driver", "C://Apresentacao//WebDriver//CTISPjeTestesAutomaticos//Arquivo//chromedriver.exe");
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome(); 
 		  
 		  capabilities.setCapability("chrome.switches", Arrays.asList("--no-default-browser-check")); 

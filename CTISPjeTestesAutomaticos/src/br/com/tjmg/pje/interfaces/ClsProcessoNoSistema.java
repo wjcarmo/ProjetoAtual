@@ -22,7 +22,6 @@ public class ClsProcessoNoSistema
 	{
 		this.varMensagem = varMensagem;
 	}
-	
 	public ClsProcessoNoSistema(String varNumeroDoProcesso, String varMensagem) 
 	{
 		super();
