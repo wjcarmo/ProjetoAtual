@@ -6,19 +6,8 @@
  
     <classes>
       <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso"/>
-      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG"/>
       <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG"/>
-       <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema"/>
-       <class name="tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin"/>
-        <class name="tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros"/>
-       
-      
-      
-      
-         
-      
-       
-     
-    </classes>
+        <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe"/>
+      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -7,43 +7,23 @@
     <classes>
       <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso">
         <methods>
+          <include name="mTestaIncluirUmNovoProcesso"/>
           <include name="inicializa"/>
           <include name="fecharDriver"/>
         </methods>
       </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso -->
-      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG">
-        <methods>
-          <include name="inicializa"/>
-        </methods>
-      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG -->
-      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema">
-        <methods>
-          <include name="inicializa"/>
-          <include name="fecharDriver"/>
-        </methods>
-      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema -->
-      <class name="tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros">
-        <methods>
-          <include name="abrePagina"/>
-          <include name="testeComFalha"/>
-          <include name="testeComSucesso"/>
-        </methods>
-      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros -->
       <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG">
         <methods>
           <include name="fecharDriver"/>
+          <include name="gerarRelatorioPrincipal"/>
           <include name="inicializarDriver"/>
-          <include name="mTestaLoginNoSistemaPJEPerfilSecretaria"/>
         </methods>
       </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG -->
-      <class name="tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin">
+      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe">
         <methods>
           <include name="inicializarDriver"/>
-          <include name="mTestaMinhaPaginaDeLogin"/>
-          <include name="fecharDriver"/>
-          <include name="mTestaMinhaPaginaDeLoginDadosInvalidos"/>
         </methods>
-      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin -->
+      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe -->
     </classes>
   </test> <!-- mTestaLoginDoUsuarioNoSistemaComDadosValidos(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -15,6 +15,7 @@ import org.testng.TestListenerAdapter;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class ClsEvidenciaDeExecucaoDosTestes  extends TestListenerAdapter
 {
@@ -23,6 +24,7 @@ public class ClsEvidenciaDeExecucaoDosTestes  extends TestListenerAdapter
     ExtentReports report;
     ExtentTest logger;
     public String print; 
+    public String img; 
     
     
 	@Override
@@ -34,7 +36,8 @@ public class ClsEvidenciaDeExecucaoDosTestes  extends TestListenerAdapter
 		String nomeTeste = tr.getMethod().getMethodName();
 		this.status = "Falhou";
 		
-		tiraPrintScreen(nomeClasse, nomeTeste,status);
+		tiraPrintScreen(nomeClasse, nomeTeste, status);
+	
 	}
 	
 	
@@ -48,11 +51,6 @@ public class ClsEvidenciaDeExecucaoDosTestes  extends TestListenerAdapter
 		this.status = "Passou";
 		
 		tiraPrintScreen(nomeClasse, nomeTeste, status);
-		
-
-		
-		
-		
 		
 	}
 	

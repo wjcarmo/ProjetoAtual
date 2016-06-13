@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin">
+      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso">
         <methods>
-          <include name="inicializarDriver"/>
-          <include name="mTestaMinhaPaginaDeLogin"/>
+          <include name="mTestaIncluirUmNovoProcesso"/>
+          <include name="inicializa"/>
           <include name="fecharDriver"/>
         </methods>
-      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin -->
+      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

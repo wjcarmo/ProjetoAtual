@@ -2,54 +2,51 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13149" started-at="2016-06-09T17:41:48Z" finished-at="2016-06-09T17:42:01Z">
+  <suite name="Default suite" duration-ms="98054" started-at="2016-06-13T16:39:59Z" finished-at="2016-06-13T16:41:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13149" started-at="2016-06-09T17:41:48Z" finished-at="2016-06-09T17:42:01Z">
-      <class name="tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin">
-        <test-method status="PASS" signature="inicializarDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin@132ec19]" name="inicializarDriver" is-config="true" duration-ms="4222" started-at="2016-06-09T14:41:48Z" finished-at="2016-06-09T14:41:52Z">
+    <test name="Default test" duration-ms="98054" started-at="2016-06-13T16:39:59Z" finished-at="2016-06-13T16:41:37Z">
+      <class name="tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso">
+        <test-method status="PASS" signature="inicializa()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso@1fdc050]" name="inicializa" is-config="true" duration-ms="4432" started-at="2016-06-13T13:39:59Z" finished-at="2016-06-13T13:40:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inicializarDriver -->
-        <test-method status="FAIL" signature="mTestaMinhaPaginaDeLogin()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin@132ec19]" name="mTestaMinhaPaginaDeLogin" duration-ms="8358" started-at="2016-06-09T14:41:52Z" finished-at="2016-06-09T14:42:00Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- inicializa -->
+        <test-method status="FAIL" signature="mTestaIncluirUmNovoProcesso()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso@1fdc050]" name="mTestaIncluirUmNovoProcesso" duration-ms="92760" started-at="2016-06-13T13:40:03Z" finished-at="2016-06-13T13:41:36Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"name","selector":"Email"}
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Unexpected modal dialog (text: Erro ao gravar arquivo no storage): Erro ao gravar arquivo no storage
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'GEJUD-536163', ip: '169.254.28.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b3dd56a2-ce8e-455e-ab27-87353df61e3b
-*** Element info: {Using=name, value=Email}]]>
+Session ID: f27228dc-ac63-4ccc-a90e-807832065f01
+*** Element info: {Using=id, value=informativo_lbl}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"name","selector":"Email"}
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Erro ao gravar arquivo no storage): Erro ao gravar arquivo no storage
 Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
 System info: host: 'GEJUD-536163', ip: '169.254.28.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b3dd56a2-ce8e-455e-ab27-87353df61e3b
-*** Element info: {Using=name, value=Email}
+Session ID: f27228dc-ac63-4ccc-a90e-807832065f01
+*** Element info: {Using=id, value=informativo_lbl}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-	at tjmg.pje.Interface.Usuario.WebDriver.MinhaPaginaDeLogin.preencherCPFCNPJ(MinhaPaginaDeLogin.java:39)
-	at tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin.mTestaMinhaPaginaDeLogin(TestaMinhaPaginaDeLogin.java:54)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaInclusaoDeUmProcesso.BotaoProcesso(ClsPaginaInclusaoDeUmProcesso.java:284)
+	at tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso.mTestaIncluirUmNovoProcesso(ClsTestaIncluirNovoProcesso.java:221)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -75,27 +72,17 @@ Session ID: b3dd56a2-ce8e-455e-ab27-87353df61e3b
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"name","selector":"Email"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'GEJUD-536163', ip: '169.254.28.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous3904994165286098587webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mTestaMinhaPaginaDeLogin -->
-        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin@132ec19]" name="fecharDriver" is-config="true" duration-ms="539" started-at="2016-06-09T14:42:00Z" finished-at="2016-06-09T14:42:01Z">
+        </test-method> <!-- mTestaIncluirUmNovoProcesso -->
+        <test-method status="PASS" signature="fecharDriver()[pri:0, instance:tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso@1fdc050]" name="fecharDriver" is-config="true" duration-ms="624" started-at="2016-06-13T13:41:36Z" finished-at="2016-06-13T13:41:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fecharDriver -->
-      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin -->
+      </class> <!-- tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

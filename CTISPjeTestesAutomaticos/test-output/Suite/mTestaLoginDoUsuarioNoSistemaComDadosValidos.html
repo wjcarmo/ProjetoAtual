@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>mTestaLoginDoUsuarioNoSistemaComDadosValidos</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/3/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 09 14:33:19 BRT 2016</td>
+<td>Started on:</td><td>Mon Jun 13 13:05:57 BRT 2016</td>
 </tr>
-<tr><td>Total time:</td><td>217 seconds (217382 ms)</td>
+<tr><td>Total time:</td><td>112 seconds (112107 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,76 +68,6 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros.abrePagina()'><b>abrePagina</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros</td>
-<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:377)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-	at tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros.abrePagina(TestNGValidaPrecoDeLivros.java:19)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13386925", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13386925'><pre>org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:377)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-	at tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros.abrePagina(TestNGValidaPrecoDeLivros.java:19)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div></td>
-<td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros@19c0f4a</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros.abrePagina()'><b>abrePagina</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros</td>
-<td></td>
-<td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros@19c0f4a</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -145,89 +75,48 @@ Driver info: driver.version: RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG.mTestaLoginNoSistemaPJEPerfilSecretaria()'><b>mTestaLoginNoSistemaPJEPerfilSecretaria</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG</td>
-<td><div><pre>java.lang.AssertionError: expected [Pegas1i Puppis] but found []
-	at tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG.mTestaLoginNoSistemaPJEPerfilSecretaria(ClsTestaPaginaDeLoginPJETestNG.java:281)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32665202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace32665202'><pre>java.lang.AssertionError: expected [Pegas1i Puppis] but found []
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG.mTestaLoginNoSistemaPJEPerfilSecretaria(ClsTestaPaginaDeLoginPJETestNG.java:281)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-</pre></div></td>
-<td>7</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@1622fdf</td></tr>
-<tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin.mTestaMinhaPaginaDeLogin()'><b>mTestaMinhaPaginaDeLogin</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Email&quot;}
-Command duration or timeout: 16 milliseconds
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso.mTestaIncluirUmNovoProcesso()'><b>mTestaIncluirUmNovoProcesso</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;formInserirParteProcesso:btnInserirParteProcesso&quot;}
+Command duration or timeout: 12 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cae6f2f2-87c5-4f8d-ab4c-fc86a27c94c5
-*** Element info: {Using=name, value=Email}
+Session ID: adc5a486-792c-4da4-bf82-00f7f89e7e2b
+*** Element info: {Using=id, value=formInserirParteProcesso:btnInserirParteProcesso}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at tjmg.pje.Interface.Usuario.WebDriver.MinhaPaginaDeLogin.preencherCPFCNPJ(MinhaPaginaDeLogin.java:39)
-	at tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin.mTestaMinhaPaginaDeLogin(TestaMinhaPaginaDeLogin.java:54)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Email&quot;}
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaInclusaoDeUmProcesso.btnInserirCPFCNPJAtivo(ClsPaginaInclusaoDeUmProcesso.java:172)
+	at tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso.mTestaIncluirUmNovoProcesso(ClsTestaIncluirNovoProcesso.java:171)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;formInserirParteProcesso:btnInserirParteProcesso&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20629656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace20629656'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Email&quot;}
-Command duration or timeout: 16 milliseconds
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5290482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5290482'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;formInserirParteProcesso:btnInserirParteProcesso&quot;}
+Command duration or timeout: 12 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cae6f2f2-87c5-4f8d-ab4c-fc86a27c94c5
-*** Element info: {Using=name, value=Email}
+Session ID: adc5a486-792c-4da4-bf82-00f7f89e7e2b
+*** Element info: {Using=id, value=formInserirParteProcesso:btnInserirParteProcesso}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -236,14 +125,14 @@ Session ID: cae6f2f2-87c5-4f8d-ab4c-fc86a27c94c5
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at tjmg.pje.Interface.Usuario.WebDriver.MinhaPaginaDeLogin.preencherCPFCNPJ(MinhaPaginaDeLogin.java:39)
-	at tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin.mTestaMinhaPaginaDeLogin(TestaMinhaPaginaDeLogin.java:54)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at tjmg.pje.Interface.Usuario.WebDriver.ClsPaginaInclusaoDeUmProcesso.btnInserirCPFCNPJAtivo(ClsPaginaInclusaoDeUmProcesso.java:172)
+	at tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso.mTestaIncluirUmNovoProcesso(ClsTestaIncluirNovoProcesso.java:171)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -269,116 +158,19 @@ Session ID: cae6f2f2-87c5-4f8d-ab4c-fc86a27c94c5
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Email&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;formInserirParteProcesso:btnInserirParteProcesso&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
 System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous1725967488131404379webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
 </pre></div></td>
-<td>8</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin@19d1a19</td></tr>
-<tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin.mTestaMinhaPaginaDeLoginDadosInvalidos()'><b>mTestaMinhaPaginaDeLoginDadosInvalidos</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Email&quot;}
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cae6f2f2-87c5-4f8d-ab4c-fc86a27c94c5
-*** Element info: {Using=name, value=Email}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at tjmg.pje.Interface.Usuario.WebDriver.MinhaPaginaDeLogin.preencherCPFCNPJ(MinhaPaginaDeLogin.java:39)
-	at tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin.mTestaMinhaPaginaDeLoginDadosInvalidos(TestaMinhaPaginaDeLogin.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Email&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6997147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace6997147'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Email&quot;}
-Command duration or timeout: 16 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: cae6f2f2-87c5-4f8d-ab4c-fc86a27c94c5
-*** Element info: {Using=name, value=Email}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at tjmg.pje.Interface.Usuario.WebDriver.MinhaPaginaDeLogin.preencherCPFCNPJ(MinhaPaginaDeLogin.java:39)
-	at tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin.mTestaMinhaPaginaDeLoginDadosInvalidos(TestaMinhaPaginaDeLogin.java:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;Email&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;GEJUD-536163&apos;, ip: &apos;169.254.28.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/P5523732/AppData/Local/Temp/anonymous648306896092534203webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
-</pre></div></td>
-<td>8</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.TestaMinhaPaginaDeLogin@19d1a19</td></tr>
+<td>41</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso@3bd550</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -388,83 +180,90 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG.mTestaExcecaoDeString()'><b>mTestaExcecaoDeString</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG</td>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_AssessorMinutarDespacho()'><b>TC_AssessorMinutarDespacho</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
 <td></td>
 <td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@93dd95</td></tr>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
 <tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso.mTestaIncluirUmNovoProcesso()'><b>mTestaIncluirUmNovoProcesso</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso</td>
-<td></td>
-<td>100</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaIncluirNovoProcesso@14b1c02</td></tr>
-<tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG.mTestaLoginDoUsuarioNoSistemaComDadosValidos()'><b>mTestaLoginDoUsuarioNoSistemaComDadosValidos</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG<br>Parameters: Wenderson</td>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_AssessorMinutarDespachoComDocumentoSigiloso()'><b>TC_AssessorMinutarDespachoComDocumentoSigiloso</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
 <td></td>
 <td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@93dd95</td></tr>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
 <tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG.mTestaLoginDoUsuarioNoSistemaNaoValido()'><b>mTestaLoginDoUsuarioNoSistemaNaoValido</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG</td>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_AssessorMinutarDespachoComUrgencia()'><b>TC_AssessorMinutarDespachoComUrgencia</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
 <td></td>
 <td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@93dd95</td></tr>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
 <tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG.mTestaLoginDoUsuarioNoSistemaSemPassarOsDados()'><b>mTestaLoginDoUsuarioNoSistemaSemPassarOsDados</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG</td>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_AssessorMinutarDespachoMinutarDecisao()'><b>TC_AssessorMinutarDespachoMinutarDecisao</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
 <td></td>
 <td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@93dd95</td></tr>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
 <tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG.mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida()'><b>mTestaLoginDoUsuarioNoSistemaUsuarioInvalidoSenhaValida</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG</td>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_AssessorMinutarDespachoMinutarSentenca()'><b>TC_AssessorMinutarDespachoMinutarSentenca</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
 <td></td>
 <td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@93dd95</td></tr>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
 <tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG.mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida()'><b>mTestaLoginDoUsuarioNoSistemaUsuarioValidoSenhaInvalida</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG</td>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_IncluirNovoProcessoComMenor()'><b>TC_IncluirNovoProcessoComMenor</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
 <td></td>
 <td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaMinhaPaginaTestNG@93dd95</td></tr>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
+<tr>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_IncluirNovoProcessoComPedidoDeJusticaGratuito()'><b>TC_IncluirNovoProcessoComPedidoDeJusticaGratuito</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
+<td></td>
+<td>0</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
+<tr>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_IncluirNovoProcessoComSegredo()'><b>TC_IncluirNovoProcessoComSegredo</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
+<td></td>
+<td>0</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
+<tr>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_IncluirNovoProcessoSemSegredo()'><b>TC_IncluirNovoProcessoSemSegredo</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
+<td></td>
+<td>0</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
+<tr>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_MagistradoAssinarDocumentosPendentes()'><b>TC_MagistradoAssinarDocumentosPendentes</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
+<td></td>
+<td>0</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
+<tr>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_MagistradoAssinarEmLote()'><b>TC_MagistradoAssinarEmLote</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
+<td></td>
+<td>0</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
+<tr>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe.TC_MagistradoConfirmarDespacho()'><b>TC_MagistradoConfirmarDespacho</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe</td>
+<td></td>
+<td>0</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestesExploratoriosPJe@11161c7</td></tr>
 <tr>
 <td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG.mTestaLoginNoSistemaPJEAssessor()'><b>mTestaLoginNoSistemaPJEAssessor</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG</td>
 <td></td>
 <td>9</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@1622fdf</td></tr>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@3a8624</td></tr>
 <tr>
 <td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG.mTestaLoginNoSistemaPJEPerfilAdvogado()'><b>mTestaLoginNoSistemaPJEPerfilAdvogado</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG</td>
 <td></td>
-<td>9</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@1622fdf</td></tr>
+<td>8</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@3a8624</td></tr>
 <tr>
 <td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG.mTestaLoginNoSistemaPJEPerfilMagistrado()'><b>mTestaLoginNoSistemaPJEPerfilMagistrado</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG</td>
 <td></td>
-<td>10</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@1622fdf</td></tr>
+<td>8</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@3a8624</td></tr>
 <tr>
 <td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG.mTestaLoginNoSistemaPJEPerfilPublico()'><b>mTestaLoginNoSistemaPJEPerfilPublico</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG</td>
 <td></td>
-<td>8</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@1622fdf</td></tr>
+<td>9</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@3a8624</td></tr>
 <tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema.mTestaPesquisaDeProcessoNoSistemaComDadosValidos()'><b>mTestaPesquisaDeProcessoNoSistemaComDadosValidos</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema</td>
+<td title='tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG.mTestaLoginNoSistemaPJEPerfilSecretaria()'><b>mTestaLoginNoSistemaPJEPerfilSecretaria</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG</td>
 <td></td>
-<td>21</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPesquisaDeProcessoNoSistema@83b407</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros.testeComFalha()'><b>testeComFalha</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros</td>
-<td></td>
-<td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros@19c0f4a</td></tr>
-<tr>
-<td title='tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros.testeComSucesso()'><b>testeComSucesso</b><br>Test class: tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros</td>
-<td></td>
-<td>0</td>
-<td>tjmg.pje.Integracao.TestNG.Usuario.TestNGValidaPrecoDeLivros@19c0f4a</td></tr>
+<td>7</td>
+<td>tjmg.pje.Integracao.TestNG.Usuario.ClsTestaPaginaDeLoginPJETestNG@3a8624</td></tr>
 </table><p>
 </body>
 </html>

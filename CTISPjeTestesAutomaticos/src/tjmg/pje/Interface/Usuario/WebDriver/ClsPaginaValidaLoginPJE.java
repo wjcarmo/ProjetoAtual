@@ -28,6 +28,11 @@ public class ClsPaginaValidaLoginPJE
 	@FindBy(how = How.ID, using = "btnEntrar") 
 	private WebElement btnEntrar;
 	
+	@FindBy(how = How.XPATH, using = ".//*[@id='j_id73']/ul/li[1]") 
+	private WebElement msn;
+	
+	
+	
 	
 	public void selecionarUsuarioLogado(WebElement usuario) 
 	{
@@ -112,5 +117,11 @@ public class ClsPaginaValidaLoginPJE
 	{
 		btnEntrar.click();		
 	}
+	
+	public String recebeMensagem() 
+	{
+		return  msn.getText(); 
+	}
+	
 	
 }

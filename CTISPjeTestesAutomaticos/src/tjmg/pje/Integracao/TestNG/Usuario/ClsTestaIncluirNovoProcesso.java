@@ -77,6 +77,8 @@ public class ClsTestaIncluirNovoProcesso extends ClsPrintScreenBase
 		
 			    processo = new ClsPaginaInclusaoDeUmProcesso(driver);	
 			    paginaDeLogin  = new ClsPaginaValidaLoginPJE(driver); 
+			    
+			    report=new ExtentReports("./Relatorios\\RelatorioDeExecucaoDeTestes.html",false);
 			  
 		
 	}
@@ -98,9 +100,11 @@ public class ClsTestaIncluirNovoProcesso extends ClsPrintScreenBase
 			//Entrada de dados para teste		
 			// Requisito para testes Pagina de Login do Sistema PJe	
 		 
-		    report=new ExtentReports("./Relatorios\\mTestaIncluirUmNovoProcesso.html");
+		    //report=new ExtentReports("./Relatorios\\mTestaIncluirUmNovoProcesso.html");
 	     
 		    logger=report.startTest("Rotina de Incluir um novo processo");
+		    
+		    logger.setDescription("Metodo que Valida inclusão de novo processo no sistema PJe");
 		     
 			paginaDeLogin.setSiteParamentro("http://pjetreina.tjmg.jus.br/pje/login.seam?loginComCertificado=true");
 			//paginaDeLogin.setSiteParamentro("http://pjesup.intra.tjmg.gov.br/pje/login.seam");
@@ -114,6 +118,9 @@ public class ClsTestaIncluirNovoProcesso extends ClsPrintScreenBase
 			logger.log(LogStatus.INFO, "Sistema PJe em Execução");
 			
 			logger.log(LogStatus.PASS, "Processo Incluido com Sucesso");
+			
+			logger.assignCategory("Testes Exploratorios");
+			
 			
 			report.endTest(logger);
 		    report.flush();

@@ -12,6 +12,8 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import br.com.tjmg.pje.Evidencias.ClsEvidenciaDeExecucaoDosTestes;
@@ -21,6 +23,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.relevantcodes.extentreports.DisplayOrder;
+
+
 
 
 
@@ -58,11 +62,14 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
     
     ExtentReports report;
     ExtentTest logger;
+    ExtentTest node;
+    
+    String result = "Falhou"; 
+        
     
 	//protected String recebeSite = "http://pjetreina.tjmg.jus.br/pje/login.seam?loginComCertificado=true";
 	protected String recebeSite = "http://pjesup.intra.tjmg.gov.br/pje/login.seam";
 	protected String retornaMensagem = "Os dados abaixo foram recuperados a partir da base de dados da Secretaria da Receita Federal do Brasil.!";
-		
 	
 	
 	@BeforeMethod
@@ -70,11 +77,32 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 	{ 
 		 driver = new  FirefoxDriver();  
 		 paginaDeLogin  = new ClsPaginaValidaLoginPJE(driver);
+		 
+		 report=new ExtentReports("./Relatorios\\RelatorioDeExecucaoDeTestes.html",false);
 
-		 ExtentReports extent = new ExtentReports("CTISPjeTestesAutomaticos",true);
+		
+				 	
+	}
+	
+	@BeforeTest
+	public void gerarRelatorioPrincipal()
+	{
+		ExtentReports extent = new ExtentReports("CTISPjeTestesAutomaticos",true);
 		 
 		 extent.assignProject("Projeto do PJe");
-				 	
+		 extent.getProjectName();
+		 
+		 report=new ExtentReports("./Relatorios\\ResultadoDosTestes.html");
+			
+		 logger=report.startTest("Inicio dos testes");	
+
+		 logger.assignCategory("Testes de Regressao");
+		 
+		 //ExtentReports extent = new ExtentReports(file-path, false);
+			  
+		
+		
+		
 	}
 	
 	@AfterMethod
@@ -95,12 +123,12 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 	@Test
 	public void mTestaLoginNoSistemaPJEAssessor() throws InterruptedException, Exception 
 	{
-		report=new ExtentReports("./Relatorios\\mTestaLoginNoSistemaPJEAssessor.html");
-				
-		logger=report.startTest("Teste do Login, perfil Assessor em execucao");	
+						
+		logger=report.startTest("Teste do Login - Perfil Assessor");	
 		
 		//Entrada de dados para teste
 		paginaDeLogin.setSiteParamentro(recebeSite);
+		
 	    logger.log(LogStatus.INFO, "Iniciando o Sistema ");
 	    
 		paginaDeLogin.preencherCPFCNPJ(recebeCPFCNPJAssessorWellington);
@@ -114,7 +142,7 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 		
 		Assert.assertEquals(paginaDeLogin.getSelectUsuarioLogado(), "WELLINGTON MARTINS COSTA");
 		
-		
+				
 		// Cria um diretório "screenshots" na raiz do projeto
 		new File("PrintEvidencias/").mkdirs();
 		// Obtém um screenshot
@@ -129,7 +157,8 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
        
 		logger.log(LogStatus.PASS, "Testes Realizados com Sucesso");
 		logger.assignAuthor("Wenderson Jose do Carmo"); 
-		logger.assignCategory("Testes de Regressao");
+		
+		logger.assignCategory("Testes Exploratorios");
 		  
 		  
 	    logger.setDescription("Metodo que Valida o login dos usuarios no sistema PJe");
@@ -151,9 +180,9 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 	public void mTestaLoginNoSistemaPJEPerfilMagistrado() throws InterruptedException, Exception 
 	{
 				
-		report=new ExtentReports("./Relatorios\\mTestaLoginNoSistemaPJEPerfilMagistrado.html");
+		//report=new ExtentReports("./Relatorios\\mTestaLoginNoSistemaPJEPerfilMagistrado.html");
 		
-		logger=report.startTest("Teste do Login, Perfil Magistrado em execucao");	
+		logger=report.startTest("Teste do Login - Perfil Magistrado");	
 		
 		//Entrada de dados para teste
 		paginaDeLogin.setSiteParamentro(recebeSite);
@@ -184,11 +213,11 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 			
 		
 		logger.log(LogStatus.PASS, "Testes Realizados com Sucesso");
-		logger.assignAuthor("Wenderson Jose do Carmo"); 
+		logger.assignAuthor("Analista de Teste II"); 
 		logger.assignCategory("Testes de Regressao");
 		
 		  
-	    logger.setDescription("Metodo que Valida o login dos usuários no sistema PJe");
+	    logger.setDescription("Metodo que Valida o login dos usuarios no sistema PJe");
 	    logger.getDescription();
 	    
 	    report.getClass();   
@@ -206,9 +235,9 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 	@Test 	
 	public void mTestaLoginNoSistemaPJEPerfilPublico() throws InterruptedException, Exception 
 	{
-		report=new ExtentReports("./Relatorios\\mTestaLoginNoSistemaPJEPerfilPublico.html");	
+		//report=new ExtentReports("./Relatorios\\mTestaLoginNoSistemaPJEPerfilPublico.html");	
 		
-		logger=report.startTest("Teste do Login, Perfil Publico em execucao");	
+		logger=report.startTest("Teste do Login - Perfil Publico");	
 		 
 		//Entrada de dados para teste
 		paginaDeLogin.setSiteParamentro(recebeSite);
@@ -242,11 +271,11 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 		
 		
 		logger.log(LogStatus.PASS, "Testes Realizados com Sucesso");
-		logger.assignAuthor("Wenderson Jose do Carmo"); 
+		logger.assignAuthor("Analista de Teste I"); 
 		logger.assignCategory("Testes de Regressao");
 		
 		  
-	    logger.setDescription("Metodo que Valida o login dos usuários no sistema PJe");
+	    logger.setDescription("Metodo que Valida o login dos usuarios no sistema PJe");
 	    logger.getDescription();
 	    
 	    report.getClass();   
@@ -263,46 +292,86 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 	@Test 	
 	public void mTestaLoginNoSistemaPJEPerfilSecretaria() throws InterruptedException, Exception 
 	{
-		report=new ExtentReports("./Relatorios\\mTestaLoginNoSistemaPJEPerfilSecretaria.html");
-		logger=report.startTest("Teste do Login, Perfil Magistrado em execucao");	
 		
-		//Entrada de dados para teste
-		paginaDeLogin.setSiteParamentro(recebeSite);
-		logger.log(LogStatus.INFO, "Iniciando o Sistema ");
+		try 
+		{
+			//report=new ExtentReports("./Relatorios\\mTestaLoginNoSistemaPJEPerfilSecretaria.html");
+			logger=report.startTest("Teste do Login - Perfil Magistrado");	
 			
-		paginaDeLogin.preencherCPFCNPJ(recebeCPFCNPJSecretaria);
-		paginaDeLogin.preencherSenha(recebeSenha);
-		paginaDeLogin.clickBotaoEntrar();
-		
-		logger.log(LogStatus.INFO, "Sistema em Execucao");
+			//Entrada de dados para teste
+			paginaDeLogin.setSiteParamentro(recebeSite);
+			logger.log(LogStatus.INFO, "Iniciando o Sistema ");
+				
+			paginaDeLogin.preencherCPFCNPJ(recebeCPFCNPJSecretaria);
+			paginaDeLogin.preencherSenha(recebeSenha);
+			paginaDeLogin.clickBotaoEntrar();
 			
-		//Retorno esperado depois da realização dos testes
-		// Verifica se são iguais, o resultado com o esperado 		
-		Assert.assertEquals(paginaDeLogin.getSelectUsuarioLogado(), "Pegas1i Puppis"); 
+			logger.log(LogStatus.INFO, "Sistema em Execucao");
+			
+			//Retorno esperado depois da realização dos testes
+			// Verifica se são iguais, o resultado com o esperado 		
+			
+			Assert.assertNotEquals(paginaDeLogin.getSelectUsuarioLogado(), "Pegasi Puppis");
+			//Assert.assertEquals(paginaDeLogin.recebeMensagem(), "Pegasi Puppis");
+			
+			
+			// Cria um diretório "screenshots" na raiz do projeto
+		 	new File("PrintEvidencias/").mkdirs();
+		    // Obtém um screenshot
+			File PJe = ((TakesScreenshot) ClsPrintScreenBase.getDriver()).getScreenshotAs(OutputType.FILE);
+								
+			// Cria um arquivo dentro do diretório "PrintEvidencias"
+			FileUtils.copyFile(PJe, new File("./PrintEvidencias\\mTestaLoginNoSistemaPJEPerfilSecretaria-print.png"));
+						   
+			 // report with snapshot
+			 String img = logger.addScreenCapture("C:\\Apresentacao\\WebDriver\\CTISPjeTestesAutomaticos\\PrintEvidencias\\mTestaLoginNoSistemaPJEPerfilSecretaria-print.png");
+			 logger.log(LogStatus.INFO, "Image", "Print da Tela: " + img);
+			
+			logger.log(LogStatus.FAIL, "Falha no Login do usuario");
+			logger.assignAuthor("Wenderson Jose do Carmo"); 
+			logger.assignCategory("Testes de Regressao");
+			
+			  
+		    logger.setDescription("Metodo que Valida o login dos usuarios no sistema PJe");
+		    logger.getDescription();
+		    
+		    report.getClass();   
+		    report.endTest(logger);
+		    report.flush();
+			
+		} 
+		catch (Exception e) 
+		{
+			// Cria um diretório "screenshots" na raiz do projeto
+		 	new File("PrintEvidencias/").mkdirs();
+		    // Obtém um screenshot
+			File PJe = ((TakesScreenshot) ClsPrintScreenBase.getDriver()).getScreenshotAs(OutputType.FILE);
+								
+			// Cria um arquivo dentro do diretório "PrintEvidencias"
+			FileUtils.copyFile(PJe, new File("./PrintEvidencias\\mTestaLoginNoSistemaPJEPerfilSecretaria-print.png"));
+						   
+			 // report with snapshot
+			 String img = logger.addScreenCapture("C:\\Apresentacao\\WebDriver\\CTISPjeTestesAutomaticos\\PrintEvidencias\\mTestaLoginNoSistemaPJEPerfilSecretaria-print.png");
+			 logger.log(LogStatus.INFO, "Image", "Print da Tela: " + e);
+			
+			logger.log(LogStatus.FAIL, "O Teste Falhou");
+			
+			logger.assignAuthor("Wenderson Jose do Carmo"); 
+			
+			logger.assignCategory("Testes de Regressao");
+					
+			  
+		    logger.setDescription("Metodo que Valida o login dos usuários no sistema PJe");
+		    logger.getDescription();
+		    
+		    report.getClass();   
+		    report.endTest(logger);
+		    report.flush();
+			
+			
+		}
 		
-		// Cria um diretório "screenshots" na raiz do projeto
-	 	new File("PrintEvidencias/").mkdirs();
-	    // Obtém um screenshot
-		File PJe = ((TakesScreenshot) ClsPrintScreenBase.getDriver()).getScreenshotAs(OutputType.FILE);
-							
-		// Cria um arquivo dentro do diretório "PrintEvidencias"
-		FileUtils.copyFile(PJe, new File("./PrintEvidencias\\mTestaLoginNoSistemaPJEPerfilSecretaria-print.png"));
-					   
-		 // report with snapshot
-		 String img = logger.addScreenCapture("C:\\Apresentacao\\WebDriver\\CTISPjeTestesAutomaticos\\PrintEvidencias\\mTestaLoginNoSistemaPJEPerfilSecretaria-print.png");
-		 logger.log(LogStatus.INFO, "Image", "Print da Tela: " + img);
 		
-		logger.log(LogStatus.PASS, "Testes Realizados com Sucesso");
-		logger.assignAuthor("Wenderson Jose do Carmo"); 
-		logger.assignCategory("Testes de Regressao");
-		
-		  
-	    logger.setDescription("Metodo que Valida o login dos usuários no sistema PJe");
-	    logger.getDescription();
-	    
-	    report.getClass();   
-	    report.endTest(logger);
-	    report.flush();
 		
 	   }
 	
@@ -314,21 +383,19 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 	@Test 	
 	public void mTestaLoginNoSistemaPJEPerfilAdvogado() throws InterruptedException, Exception 
 	{  
-		report=new ExtentReports("./Relatorios\\mTestaLoginNoSistemaPJEPerfilAdvogado.html");
-		logger=report.startTest("Teste do Login, Perfil Advogado em execucao");	
+	
+		logger=report.startTest("Teste do Login - Perfil Advogado");	
+		logger.log(LogStatus.INFO, "Iniciando o Sistema ");
 		
-		
-		//Entrada de dados para teste
 		paginaDeLogin.setSiteParamentro(recebeSite);
-		 logger.log(LogStatus.INFO, "Iniciando o Sistema ");
 			
+		//Entrada de dados para teste
 		paginaDeLogin.preencherCPFCNPJ(recebeCPFCNPJAdvogadoAbdala);
 		paginaDeLogin.preencherSenha(recebeSenha);
 		paginaDeLogin.clickBotaoEntrar();
 		
 		logger.log(LogStatus.INFO, "Sistema em Execucao");
-	
-		
+			
 		//Retorno esperado depois da realização dos testes
 		// Verifica se são iguais, o resultado com o esperado 
 		Assert.assertEquals(paginaDeLogin.getSelectUsuarioLogado(), "ABDALA LOBO ANTUNES"); 
@@ -337,27 +404,23 @@ public class ClsTestaPaginaDeLoginPJETestNG extends ClsPrintScreenBase
 	 	new File("PrintEvidencias/").mkdirs();
 	    // Obtém um screenshot
 		File PJe = ((TakesScreenshot) ClsPrintScreenBase.getDriver()).getScreenshotAs(OutputType.FILE);
-							
 		// Cria um arquivo dentro do diretório "PrintEvidencias"
 		FileUtils.copyFile(PJe, new File("./PrintEvidencias\\mTestaLoginNoSistemaPJEPerfilAdvogado-print.png"));
-					   
-		 // report with snapshot
-		 String img = logger.addScreenCapture("C:\\Apresentacao\\WebDriver\\CTISPjeTestesAutomaticos\\PrintEvidencias\\mTestaLoginNoSistemaPJEPerfilAdvogado-print.png");
-		 logger.log(LogStatus.INFO, "Image", "Print da Tela: " + img);
+	    // report with snapshot
+		String img = logger.addScreenCapture("C:\\Apresentacao\\WebDriver\\CTISPjeTestesAutomaticos\\PrintEvidencias\\mTestaLoginNoSistemaPJEPerfilAdvogado-print.png");
+		logger.log(LogStatus.INFO, "Image", "Print da Tela: " + img);
 		
 		logger.log(LogStatus.PASS, "Testes Realizados com Sucesso");
 		logger.assignAuthor("Wenderson Jose do Carmo"); 
 		logger.assignCategory("Testes de Regressao");
-		
-		  
-	    logger.setDescription("Metodo que Valida o login dos usuários no sistema PJe");
+	  
+	    logger.setDescription("Metodo que Valida o login dos usuarios no sistema PJe");
 	    logger.getDescription();
 	    
 	    report.getClass();   
 	    report.endTest(logger);
 	    report.flush();
-		
-	   }
+	}
 	
 	public void onTestSuccess(ITestResult result)
 	{
